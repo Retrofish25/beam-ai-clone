@@ -632,17 +632,15 @@ function CTASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            Solutions
+            Revolución IA
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Build Your Workforce Today!
+          "La IA no va a reemplazar a los humanos, pero los humanos que usen IA reemplazaran a los que no lo hagan."
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            With Beam AI, build an AI workforce that automates tasks efficiently. Deploy intelligent
-            agents to streamline operations and improve performance across your business today!
+            Con Meduzia podés revolucionar tu negocio. Menos tareas manuales, más decisiones automatizadas y una estructura que aprende y mejora sola.  
+  Es el momento de potenciar tu equipo con Agentes que ejecutan, analizan y escalan sin límites.
           </p>
-          <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow">
-            Speak to us
           </Button>
         </div>
 
@@ -689,8 +687,7 @@ function FAQSection() {
             Preguntas Frecuentes
           </h2>
           <p className="text-xl text-gray-300 mb-12">
-            Learn the answers to common questions about our AI solutions, tools, and services,
-            helping you understand how they can benefit your business and streamline operations.
+            Como Meduzia puede ayudar a tu negocio a escalar de la mano de los Agentes de Inteligencia Artificial.
           </p>
         </div>
 
