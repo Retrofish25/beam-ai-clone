@@ -277,7 +277,7 @@ function AgentsGallery() {
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png",
       tags: ["Analytics", "Big Data", "Insights"]
-    },
+    }
   ]
 
   return (
