@@ -560,10 +560,10 @@ function NewsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            News & Blogs
+            Noticias & Blogs
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Agentic Insights
+            Novedades de la Industria IA
           </h2>
         </div>
 
@@ -633,26 +633,32 @@ function CTASection() {
             Revolución IA
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          "La IA no va a reemplazar a los humanos, pero los humanos que usen IA reemplazaran a los que no lo hagan."
+            "La IA no va a reemplazar a los humanos, pero los humanos que usen IA reemplazarán a los que no lo hagan."
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Con Meduzia podés revolucionar tu negocio. Menos tareas manuales, más decisiones automatizadas y una estructura que aprende y mejora sola.  
-  Es el momento de potenciar tu equipo con Agentes que ejecutan, analizan y escalan sin límites.
+            Es el momento de potenciar tu equipo con Agentes que ejecutan, analizan y escalan sin límites.
           </p>
-          </Button>
         </div>
 
+        {/* Opcional: Reemplazo de imagen por video */}
         <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto">
-          <img
-            src="https://ext.same-assets.com/2264316469/1038128939.png"
-            alt="Beam AI Workflow Builder"
+          <video
+            src="https://www.youtube.com/watch?v=j22wYvC-IjU&t=32s" // Reemplazá con tu video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-auto rounded-lg"
-          />
+          >
+            Tu navegador no soporta video HTML5.
+          </video>
         </div>
       </div>
     </section>
   )
 }
+
 
 function FAQSection() {
   const faqs = [
