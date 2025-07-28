@@ -67,7 +67,7 @@ function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className={`text-center mb-8 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
           <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">
-     Nuevo Lanzamientop
+     Nuevo Lanzamiento
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Ecosistema de Agentes<br />
@@ -77,7 +77,7 @@ function HeroSection() {
             La plataforma de agentes más avanzada para automatizar procesos de negocio. Meduzia revoluciona su marketing, publicidad, ventas y atención al cliente a través de Agentes IA que opreran de manera continua, reducen costos y mejoran la productividad.
           </p>
           <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-         Solicitar Demos
+         Solicitar Demo
           </Button>
         </div>
 
