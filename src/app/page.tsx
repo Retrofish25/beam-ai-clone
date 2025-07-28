@@ -633,7 +633,7 @@ function CTASection() {
             Revolución IA
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            "La IA no va a reemplazar a los humanos, pero los humanos que usen IA reemplazarán a los que no lo hagan."
+            "La IA no va a reemplazar a los humanos, pero los que la usen reemplazarán a los que no lo hagan."
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Con Meduzia podés revolucionar tu negocio. Menos tareas manuales, más decisiones automatizadas y una estructura que aprende y mejora sola.  
