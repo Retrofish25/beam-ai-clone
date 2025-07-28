@@ -70,13 +70,11 @@ function HeroSection() {
      Nuevo Lanzamientop
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Hire Self-Learning AI Agents<br />
-            to Run Your Operations
+            Ecosistema de Agentes<br />
+            que operan y escalan por vos
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Meet the leading agentic AI platform for Agentic Process Automation. Used by Fortune
-            500 companies and scale-ups, the platform automates workflows with an advanced AI
-            agent platform to reduce operational cost and create leverage
+            La plataforma de agentes más avanzada para automatizar procesos de negocio. Meduzia revoluciona su marketing, publicidad, ventas y atención al cliente a través de Agentes IA que opreran de manera continua, reducen costos y mejoran la productividad.
           </p>
           <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
          Solicitar Demos
