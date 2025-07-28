@@ -19,7 +19,6 @@ export default function Home() {
         <WorkflowsSection />
         <BenefitsSection />
         <AgentOSSection />
-        <MultiAgentSection />
         <NewsSection />
         <CTASection />
         <FAQSection />
