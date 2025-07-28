@@ -290,9 +290,6 @@ function AgentsGallery() {
                   </div>
 
                   <div className="mt-4 pt-4 border-t border-white/20">
-                    <Button variant="outline" size="sm" className="w-full border-blue-500/40 text-blue-300 hover:bg-blue-500/20 backdrop-blur-sm">
-                      Ver Detalles →
-                    </Button>
                   </div>
                 </div>
               </CardContent>
