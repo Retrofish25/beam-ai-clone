@@ -676,7 +676,6 @@ function FAQSection() {
     question: "¿Cómo se integran los agentes con mis sistemas?",
     answer: "La arquitectura modular de Meduzia permite integrar fácilmente los agentes con CRM, herramientas de publicidad, plataformas de mensajería y otros sistemas ya existentes en tu negocio."
   }
-]
   ]
 
   return (
