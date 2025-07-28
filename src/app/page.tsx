@@ -1,0 +1,821 @@
+'use client'
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { useRef, useState, useEffect } from 'react'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
+import { FloatingParticles } from '@/components/FloatingParticles'
+
+export default function Home() {
+  return (
+    <div className="min-h-screen relative overflow-hidden">
+      <FloatingParticles />
+      <div className="relative z-10">
+        <Navigation />
+        <HeroSection />
+        <AIAgentsSection />
+        <WorkflowsSection />
+        <BenefitsSection />
+        <AgentOSSection />
+        <CaseStudiesSection />
+        <MultiAgentSection />
+        <NewsSection />
+        <CTASection />
+        <FAQSection />
+        <Footer />
+      </div>
+    </div>
+  )
+}
+
+function Navigation() {
+  return (
+    <nav className="fixed top-0 w-full bg-gradient-to-r from-slate-900/90 via-blue-900/20 to-slate-900/90 backdrop-blur-md border-b border-blue-500/20 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center space-x-2">
+            <div className="text-2xl font-bold text-white">meduzia</div>
+          </div>
+          <div className="hidden md:flex items-center justify-center space-x-8">
+            <a href="/agentes" className="text-gray-300 hover:text-white transition-colors">Agentes</a>
+            <a href="/soluciones" className="text-gray-300 hover:text-white transition-colors">Soluciones</a>
+            <a href="/contacto" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
+              <div className="w-6 h-0.5 bg-white"></div>
+              <div className="w-6 h-0.5 bg-white"></div>
+              <div className="w-6 h-0.5 bg-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
+function HeroSection() {
+  const { ref, isIntersecting } = useIntersectionObserver()
+
+  return (
+    <section ref={ref} className="pt-24 pb-16 relative overflow-hidden hero-gradient">
+      <div className="absolute inset-0 beam-grid opacity-30"></div>
+      <div className="absolute inset-0 gradient-mesh"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className={`text-center mb-8 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
+          <Badge className="mb-6 bg-blue-500/10 text-blue-400 border-blue-500/20">
+     Nuevo Lanzamientop
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Hire Self-Learning AI Agents<br />
+            to Run Your Operations
+          </h1>
+          <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            Meet the leading agentic AI platform for Agentic Process Automation. Used by Fortune
+            500 companies and scale-ups, the platform automates workflows with an advanced AI
+            agent platform to reduce operational cost and create leverage
+          </p>
+          <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
+         Solicitar Demos
+          </Button>
+        </div>
+
+        <div className={`mt-16 relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.3s' }}>
+          <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto hover-lift">
+            <img
+              src="https://ext.same-assets.com/2264316469/3033932722.png"
+              alt="Beam AI Dashboard"
+              className="w-full h-auto rounded-lg"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function AIAgentsSection() {
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [visibleCards, setVisibleCards] = useState(3)
+  const { ref, isIntersecting } = useIntersectionObserver()
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: -400, behavior: 'smooth' })
+      setCurrentIndex(Math.max(0, currentIndex - 1))
+    }
+  }
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({ left: 400, behavior: 'smooth' })
+      setCurrentIndex(Math.min(agents.length - visibleCards, currentIndex + 1))
+    }
+  }
+
+  const scrollToIndex = (index: number) => {
+    if (scrollContainerRef.current) {
+      const cardWidth = 400 // approximate card width including gap
+      scrollContainerRef.current.scrollTo({ left: index * cardWidth, behavior: 'smooth' })
+      setCurrentIndex(index)
+    }
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCards(1)
+      } else if (window.innerWidth < 1024) {
+        setVisibleCards(2)
+      } else {
+        setVisibleCards(3)
+      }
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const agents = [
+    {
+      title: "Resume Screening AI Agent",
+      category: "Human Resources & Recruitment",
+      workflows: ["Resume Intake", "Role-Based Scoring", "Fit Filtering"],
+      image: "https://ext.same-assets.com/2264316469/348423250.png"
+    },
+    {
+      title: "Payroll Audit AI Agent",
+      category: "Human Resources & Recruitment",
+      workflows: ["Data Review", "Error Flagging", "Compliance Checks"],
+      image: "https://ext.same-assets.com/2264316469/3321369627.png"
+    },
+    {
+      title: "Interview Scheduling AI Agent",
+      category: "Human Resources & Recruitment",
+      workflows: ["Availability Matching", "Slot Suggestions", "Booking Confirmation"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png"
+    },
+    {
+      title: "Customer Support AI Agent",
+      category: "Customer Service",
+      workflows: ["Query Analysis", "Response Generation", "Ticket Routing"],
+      image: "https://ext.same-assets.com/2264316469/348423250.png"
+    },
+    {
+      title: "Sales Automation AI Agent",
+      category: "Sales & Marketing",
+      workflows: ["Lead Qualification", "Follow-up Emails", "Pipeline Management"],
+      image: "https://ext.same-assets.com/2264316469/3321369627.png"
+    },
+    {
+      title: "Document Processing AI Agent",
+      category: "Operations",
+      workflows: ["Data Extraction", "Classification", "Validation"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png"
+    },
+    {
+      title: "Financial Analysis AI Agent",
+      category: "Finance & Accounting",
+      workflows: ["Report Generation", "Trend Analysis", "Risk Assessment"],
+      image: "https://ext.same-assets.com/2264316469/348423250.png"
+    }
+  ]
+
+  return (
+    <section ref={ref} className="py-20 relative section-gradient">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className={`text-center mb-16 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            AI Agents
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            AI Agents: Workforce With<br />Human-Level Performance
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            AI agents deliver precise, efficient task automation, matching human-level
+            performance. They operate continuously, reducing errors and increasing productivity,
+            allowing businesses to scale fast without additional human resource costs.
+          </p>
+          <Button className="gradient-primary text-white hover-glow">See all agents</Button>
+        </div>
+
+        <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
+          {/* Navigation Arrows */}
+          <button
+            onClick={scrollLeft}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-blue-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full flex items-center justify-center text-white hover:bg-blue-600/30 hover-glow transition-all -ml-6"
+          >
+            ←
+          </button>
+
+          <button
+            onClick={scrollRight}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-blue-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full flex items-center justify-center text-white hover:bg-blue-600/30 hover-glow transition-all -mr-6"
+          >
+            →
+          </button>
+
+          {/* Carousel Container */}
+          <div
+            ref={scrollContainerRef}
+            className="flex gap-8 overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
+            style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+            }}
+          >
+            {agents.map((agent, index) => (
+              <Card key={index} className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 hover-lift transition-all flex-shrink-0 w-80 md:w-96 relative overflow-hidden">
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform hover:scale-105"
+                  style={{ backgroundImage: `url(${agent.image})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+                <CardContent className="p-0 relative z-10">
+                  <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                    <div className="w-full h-full"></div>
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 text-xs bg-blue-500/20 text-blue-300 border-blue-500/30 backdrop-blur-sm">
+                      {agent.category}
+                    </Badge>
+                    <h3 className="text-xl font-semibold text-white mb-4 drop-shadow-lg">{agent.title}</h3>
+                    <div className="space-y-2">
+                      <p className="text-sm text-gray-300 uppercase tracking-wider font-medium drop-shadow">workflows</p>
+                      {agent.workflows.map((workflow, idx) => (
+                        <p key={idx} className="text-gray-200 drop-shadow">{workflow}</p>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Carousel Indicators */}
+          <div className="flex justify-center gap-2 mt-6">
+            {Array.from({ length: Math.max(1, agents.length - visibleCards + 1) }).map((_, index) => (
+              <div
+                key={index}
+                onClick={() => scrollToIndex(index)}
+                className={`carousel-indicator ${
+                  index === currentIndex ? 'active' : 'inactive'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function WorkflowsSection() {
+  const { ref, isIntersecting } = useIntersectionObserver()
+
+  const workflows = [
+    {
+      title: "Employee Onboarding",
+      category: "Human Resources",
+      description: "Handle new hire onboarding tasks like document collection and HR profile creation automatically to save time.",
+      actions: [
+        "Collect required documents and information.",
+        "Verify the authenticity of documents and validate credentials.",
+        "Create employee profiles in the system.",
+        "Send onboarding schedules, policies, and other resources to new hires."
+      ],
+      icon: "https://ext.same-assets.com/2264316469/3199254365.png"
+    },
+    {
+      title: "General Customer Support",
+      category: "Customer Service",
+      description: "Manage customer inquiries efficiently with AI agents for General Customer Support, providing timely support and resolving common issues.",
+      actions: [
+        "Analyze the content of the customer query and apply instructions and principles based on the supporting information to formulate a response.",
+        "Send the generated response to the customer."
+      ],
+      icon: "https://ext.same-assets.com/2264316469/1242082632.png"
+    },
+    {
+      title: "Sales Proposal Generation",
+      category: "General Problem Solvers",
+      description: "Generate tailored sales proposals in minutes with AI agents for Sales Proposal Generation, reducing manual effort and accelerating your sales cycle.",
+      actions: [
+        "Gather all relevant information about the client through a web search.",
+        "Analyze the gathered client information and tailor the Unique Selling Propositions (USPs) of the seller company to meet the specific needs of the client.",
+        "Compile the drafted proposal into a Google Document for easy sharing and collaboration.",
+        "Send an email to the client with the document link to the Google Document, ensuring streamlined communication."
+      ],
+      icon: "https://ext.same-assets.com/2264316469/3883820722.png"
+    }
+  ]
+
+  return (
+    <section className="py-20 border-t border-white/10 relative gradient-mesh">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Agentic Workflows
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            A Learning System to Optimize and<br />Automate Workflows. It's Possible.
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            AI agents, powered by agentic workflows, leverage advanced learning systems to
+            autonomously identify and automate essential tasks. This dynamic adaptability keeps
+            operations smooth and responsive to changing demands.
+          </p>
+          <Button className="gradient-primary text-white">See all workflows</Button>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+          {workflows.map((workflow, index) => (
+            <Card key={index} className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all">
+              <CardContent className="p-8">
+                <div className="flex items-center space-x-3 mb-4">
+                  <img src={workflow.icon} alt="" className="w-8 h-8" />
+                  <Badge className="text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                    {workflow.category}
+                  </Badge>
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-4">{workflow.title}</h3>
+                <p className="text-gray-300 mb-6 text-sm leading-relaxed">{workflow.description}</p>
+
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Agentic Actions</h4>
+                  {workflow.actions.map((action, idx) => (
+                    <div key={idx} className="flex items-start space-x-3">
+                      <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
+                      <p className="text-gray-300 text-sm">{action}</p>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function BenefitsSection() {
+  return (
+    <section className="py-20 border-t border-white/10 relative section-gradient">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Benefits
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Improve Operational Efficiency<br />and Create Leverage. Fast.
+          </h2>
+          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+            Deploy AI agents to streamline operations and amplify your business's efficiency. These
+            agents optimize processes, reduce delays, and enhance output, ensuring you gain a
+            competitive edge with speed and precision.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-8 items-center">
+          <div className="md:col-span-1">
+            <Card className="gradient-primary p-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Integrate AI Agents Into<br />Your Organization Structure
+              </h3>
+            </Card>
+          </div>
+
+          <div className="md:col-span-3 grid md:grid-cols-3 gap-6">
+            <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
+              <div className="text-4xl font-bold text-white mb-2">93%</div>
+              <p className="text-gray-300 text-sm">Reduction in time eliminated tasks</p>
+            </Card>
+            <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
+              <div className="text-4xl font-bold text-white mb-2">100%</div>
+              <p className="text-gray-300 text-sm">Automation of repetitive tasks</p>
+            </Card>
+            <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
+              <div className="text-4xl font-bold text-white mb-2">85%</div>
+              <p className="text-gray-300 text-sm">Faster aggregation of data</p>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function AgentOSSection() {
+  return (
+    <section className="py-20 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Agent OS
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Agentic. Reliable.<br />Accurate AI for Enterprise
+          </h2>
+          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+            An AI-native platform that combines accuracy, reliability, and flexibility in one powerful
+            solution. With multi-agent capabilities and a modular design, it acts as the glue
+            between your systems.
+          </p>
+        </div>
+
+        <div className="relative">
+          <img
+            src="https://ext.same-assets.com/2264316469/2832301244.svg"
+            alt="Agent OS Architecture"
+            className="w-full max-w-4xl mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function CaseStudiesSection() {
+  const caseStudies = [
+    {
+      title: "Streamlining Quotation Generation with AI Automation",
+      category: "Financial Services & Banking",
+      image: "https://ext.same-assets.com/2264316469/2114615059.jpeg"
+    },
+    {
+      title: "Transforming Order Management with AI Agents for a Leading B2B Bakery Supplier",
+      category: "Supply Chain & Logistics",
+      image: "https://ext.same-assets.com/2264316469/3909368598.jpeg"
+    },
+    {
+      title: "Automating Contact Management Across 5 Systems with Agentic AI",
+      category: "Retail & E-Commerce",
+      image: "https://ext.same-assets.com/2264316469/2760134810.jpeg"
+    }
+  ]
+
+  return (
+    <section className="py-20 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Case Studies
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Industry Specific AI: One<br />Platform for All Your Needs
+          </h2>
+          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+            Explore how AI delivers tangible results in diverse scenarios. From optimizing workflows
+            to driving innovation, see concise examples of how our technology addresses specific
+            challenges and enhances performance across various fields.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {caseStudies.map((study, index) => (
+            <Card key={index} className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
+                </div>
+                <div className="p-6">
+                  <Badge className="mb-3 text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                    {study.category}
+                  </Badge>
+                  <h3 className="text-lg font-semibold text-white mb-4 leading-tight">{study.title}</h3>
+                  <p className="text-blue-400 text-sm font-medium">Read Case Study →</p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function MultiAgentSection() {
+  return (
+    <section className="py-20 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Multi-Agent
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Empowering Autonomous<br />Agents to Work Together
+          </h2>
+          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+            Why rely on a single agent when you can utilize the power of many? Beam's agentic AI
+            systems integrate multiple agents for more comprehensive and cohesive automation
+            strategy, boosting productivity across all levels of your organization.
+          </p>
+        </div>
+
+        <div className="relative">
+          <img
+            src="https://ext.same-assets.com/2264316469/1019656937.webp"
+            alt="Multi-Agent Collaboration"
+            className="w-full max-w-3xl mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function NewsSection() {
+  const articles = [
+    {
+      title: "From Co-Pilots to AI Agents: Exploring the 5 Levels of Autonomy",
+      author: "Bareerah Shoukat",
+      date: "Jul 23, 2025",
+      image: "https://ext.same-assets.com/2264316469/329113509.png",
+      featured: true
+    },
+    {
+      title: "The AI Wars: Talent, Infrastructure, and the Future of the Web",
+      image: "https://ext.same-assets.com/2264316469/3234034791.png"
+    },
+    {
+      title: "From RPA to APA: Why Bots Alone Can't Keep Up in 2025",
+      image: "https://ext.same-assets.com/2264316469/2123165345.png"
+    },
+    {
+      title: "From 10 Clients to 1,000: How Entrepreneurs Are Scaling Operations with Agentic AI",
+      image: "https://ext.same-assets.com/2264316469/4075020448.png"
+    }
+  ]
+
+  return (
+    <section className="py-20 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            News & Blogs
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Agentic Insights
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
+            <CardContent className="p-0">
+              <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                <img
+                  src={articles[0].image}
+                  alt={articles[0].title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="p-6">
+                <Badge className="mb-3 text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                  ARTICLE
+                </Badge>
+                <h3 className="text-xl font-semibold text-white mb-4 leading-tight">{articles[0].title}</h3>
+                <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                  <span>by {articles[0].author}</span>
+                  <span>•</span>
+                  <span>{articles[0].date}</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="space-y-6">
+            {articles.slice(1).map((article, index) => (
+              <Card key={index} className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
+                <CardContent className="p-6 flex space-x-4">
+                  <div className="w-20 h-20 flex-shrink-0">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <Badge className="mb-2 text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                      ARTICLE
+                    </Badge>
+                    <h4 className="text-white font-medium leading-tight">{article.title}</h4>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div className="text-center mt-8">
+          <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+            See all Posts
+          </Button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function CTASection() {
+  return (
+    <section className="py-20 border-t border-white/10 relative hero-gradient">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            Solutions
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Build Your Workforce Today!
+          </h2>
+          <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+            With Beam AI, build an AI workforce that automates tasks efficiently. Deploy intelligent
+            agents to streamline operations and improve performance across your business today!
+          </p>
+          <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow">
+            Speak to us
+          </Button>
+        </div>
+
+        <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto">
+          <img
+            src="https://ext.same-assets.com/2264316469/1038128939.png"
+            alt="Beam AI Workflow Builder"
+            className="w-full h-auto rounded-lg"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function FAQSection() {
+  const faqs = [
+    {
+      question: "What is agentic AI?",
+      answer: "Agentic AI refers to autonomous AI systems that can act independently to achieve goals, make decisions, and perform tasks without constant human oversight."
+    },
+    {
+      question: "How can AI automation scale operations with intelligent agents?",
+      answer: "AI agents can handle repetitive tasks, process large volumes of data, and operate 24/7, allowing businesses to scale operations without proportional increases in human resources."
+    },
+    {
+      question: "What are our AI tools and their benefits?",
+      answer: "Our AI tools include workflow automation, document processing, customer service agents, and data analysis capabilities that reduce manual work and improve accuracy."
+    },
+    {
+      question: "What AI courses are available for businesses?",
+      answer: "We offer comprehensive training programs on agentic AI implementation, workflow design, and best practices for integrating AI agents into business operations."
+    }
+  ]
+
+  return (
+    <section className="py-20 border-t border-white/10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+            FAQ
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-gray-300 mb-12">
+            Learn the answers to common questions about our AI solutions, tools, and services,
+            helping you understand how they can benefit your business and streamline operations.
+          </p>
+        </div>
+
+        <Accordion type="single" collapsible className="space-y-4">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="gradient-card glass-border border-white/10 rounded-lg px-6"
+            >
+              <AccordionTrigger className="text-white hover:no-underline py-6">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-300 pb-6">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  )
+}
+
+function Footer() {
+  return (
+    <footer className="py-16 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
+          <div className="md:col-span-1">
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="text-2xl font-bold text-white">beam</div>
+            </div>
+            <div className="flex space-x-4 mb-6">
+              <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
+              <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
+              <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
+            </div>
+            <div className="mb-6">
+              <h4 className="text-white font-medium mb-4">Subscribe to our newsletter</h4>
+              <div className="flex">
+                <input
+                  type="email"
+                  placeholder="name@email.com"
+                  className="flex-1 bg-gray-800 border border-gray-700 rounded-l px-3 py-2 text-white text-sm"
+                />
+                <Button className="bg-white text-black rounded-l-none px-6">Subscribe</Button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-white font-medium mb-4">Platform</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><a href="#" className="hover:text-white transition-colors">AI Agent Platform</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">AI Agent Tools</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">AI Agents</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Agentic Workflows</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">AgentOS</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Database, Memory & Rag</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-medium mb-4">Solutions</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><a href="#" className="hover:text-white transition-colors">BPO</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Financial Services</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">HR & Recruitment</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Customer Service</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Debt Collection</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Insurance</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Healthcare</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Property Management</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Custom AI Solutions</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-medium mb-4">Resources</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><a href="#" className="hover:text-white transition-colors">Agentic Insights Blog</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Webinars <Badge className="ml-1 text-xs bg-blue-500 text-white">NEW</Badge></a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Changelog</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Partner Program</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Beam Academy</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Use Cases</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Agentic Automation 101</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">AI Native <Badge className="ml-1 text-xs bg-blue-500 text-white">NEW</Badge></a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-medium mb-4">Company</h4>
+            <ul className="space-y-2 text-gray-400 text-sm mb-6">
+              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Career</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Request Demo</a></li>
+            </ul>
+
+            <h4 className="text-white font-medium mb-4">Legal</h4>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Security</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Data Protection</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Imprint</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm">
+          <p>© Beam AI. All rights reserved 2025</p>
+          <div className="flex items-center space-x-4 mt-4 md:mt-0">
+            <div className="flex items-center space-x-2">
+              <div className="w-4 h-4 bg-gray-600 rounded"></div>
+              <span>EN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
