@@ -328,7 +328,7 @@ function WorkflowsSection() {
             Un sistema que revoluciona tu negocio.
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Marketing, Atención y Gestión<br />Automatizamos el ciclo completo del cliente con IA
+            Marketing, Atención y Gestión.<br />Automatizamos el ciclo completo del cliente con IA
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Los agentes de Meduzia automatizan de punta a punta el recorrido del cliente: desde la generación del primer contacto con campañas virales y anuncios optimizados, hasta la atención automatizada en múltiples canales y la gestión operativa del negocio. Todo integrado, optimizando y escalando.
