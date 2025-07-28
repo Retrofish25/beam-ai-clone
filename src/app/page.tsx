@@ -641,24 +641,17 @@ function CTASection() {
           </p>
         </div>
 
-        {/* Opcional: Reemplazo de imagen por video */}
         <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto">
-          <video
-            src="https://www.youtube.com/watch?v=j22wYvC-IjU&t=32s" // Reemplazá con tu video
-            autoPlay
-            loop
-            muted
-            playsInline
+          <img
+            src="https://ext.same-assets.com/2264316469/1038128939.png"
+            alt="Beam AI Workflow Builder"
             className="w-full h-auto rounded-lg"
-          >
-            Tu navegador no soporta video HTML5.
-          </video>
+          />
         </div>
       </div>
     </section>
-  )
+  );
 }
-
 
 function FAQSection() {
   const faqs = [
