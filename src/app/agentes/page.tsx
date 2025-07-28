@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
@@ -35,7 +36,7 @@ function Navigation() {
             <Link href="/contacto" className="text-gray-300 hover:text-white transition-colors">Contacto</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-white">Request Access</Button>
+            <Button variant="ghost" className="text-white">Solicitar Demo</Button>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
               <div className="w-6 h-0.5 bg-white"></div>
@@ -65,7 +66,7 @@ function HeroSection() {
             Agentes de AI
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Explora nuestra colección completa de agentes de inteligencia artificial especializados.
+            Explorá nuestra colección completa de agentes de inteligencia artificial especializados.
             Cada agente está diseñado para automatizar tareas específicas y optimizar tu flujo de trabajo.
           </p>
           <Link href="/">
