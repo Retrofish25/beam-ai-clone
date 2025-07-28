@@ -230,6 +230,30 @@ function AgentsGallery() {
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png",
       tags: ["Analytics", "Big Data", "Insights"]
+    },
+    {
+      title: "Data 2222Analytics AI Agent2",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
+    },
+    {
+      title: "Data 4444222Analytics AI Agent2",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
+    },
+    {
+      title: "Data080-42552Analytics AI Agent2",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
     }
   ]
 
