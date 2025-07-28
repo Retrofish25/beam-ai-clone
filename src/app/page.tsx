@@ -419,15 +419,15 @@ function AgentOSSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            Agent OS
+            Sistema Meduzia
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Agentic. Reliable.<br />Accurate AI for Enterprise
+            Plataforma Inteligente<br />sistemas de nivel empresarial con precisión y escalabilidad.
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
-            An AI-native platform that combines accuracy, reliability, and flexibility in one powerful
-            solution. With multi-agent capabilities and a modular design, it acts as the glue
-            between your systems.
+            Meduzia es una plataforma nativa de agentes de IA diseñada para empresas que buscan escalar con tecnología confiable.
+Su arquitectura modular y capacidad multiagente se adaptan a cualquier sistema existente, conectando procesos, optimizando decisiones y reduciendo fricción operativa.
+Es el núcleo inteligente que unifica automatización, análisis y ejecución en una sola solución.
           </p>
         </div>
 
