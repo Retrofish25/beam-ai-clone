@@ -279,36 +279,38 @@ function WorkflowsSection() {
 
   const workflows = [
     {
-      title: "Employee Onboarding",
-      category: "Human Resources",
-      description: "Handle new hire onboarding tasks like document collection and HR profile creation automatically to save time.",
+      title: "Ejecución de Marketing Automatizado",
+      category: "Marketing y Publicidad",
+      description: "Automatizá todo tu flujo de trabajo de marketing con agentes de IA que crean lenguajes y contenido en múltiples canales para maximizar el alcance y la conversión.",
       actions: [
-        "Collect required documents and information.",
-        "Verify the authenticity of documents and validate credentials.",
-        "Create employee profiles in the system.",
-        "Send onboarding schedules, policies, and other resources to new hires."
+        "Busqueda de contenido en tendencia en RRSS",
+        "Crear contenido con distintos ángulos de venta inspirado en lenguaje viral.",
+        "Monitorear métricas de rendimiento y ajustar la estrategia en tiempo real.",
+        "Probar variaciones creativas (copy, visuales, formatos) para detectar lo que mejor funciona."
       ],
       icon: "https://ext.same-assets.com/2264316469/3199254365.png"
     },
     {
-      title: "General Customer Support",
-      category: "Customer Service",
-      description: "Manage customer inquiries efficiently with AI agents for General Customer Support, providing timely support and resolving common issues.",
+      title: "Atención al Cliente",
+      category: "Ventas y Posventa",
+      description: "Gestioná consultas de clientes de forma eficiente con agentes de IA que brindan respuestas rápidas y resuelven incidencias comunes sin intervención humana.",
       actions: [
-        "Analyze the content of the customer query and apply instructions and principles based on the supporting information to formulate a response.",
-        "Send the generated response to the customer."
+        "Analizar el contenido de la consulta del cliente y aplicar reglas, contexto e información disponible para generar una respuesta adecuada.",
+        "Enviar automáticamente la respuesta generada al cliente por el canal correspondiente.", 
+        "Encontrar nuevos insights, generar reportes en tiempo real, optimizar respuestas y derivar consultas a superiores."
       ],
       icon: "https://ext.same-assets.com/2264316469/1242082632.png"
     },
     {
-      title: "Sales Proposal Generation",
-      category: "General Problem Solvers",
-      description: "Generate tailored sales proposals in minutes with AI agents for Sales Proposal Generation, reducing manual effort and accelerating your sales cycle.",
+      title: "Gestión de Clientes y Operaciones",
+      category: "Solución de gestión general",
+      description: "Automatiza la gestión de clientes, inventario, oportunidades y decisiones comerciales con agentes de IA que supervisan, analizan y accionan de forma continua.",
       actions: [
-        "Gather all relevant information about the client through a web search.",
-        "Analyze the gathered client information and tailor the Unique Selling Propositions (USPs) of the seller company to meet the specific needs of the client.",
-        "Compile the drafted proposal into a Google Document for easy sharing and collaboration.",
-        "Send an email to the client with the document link to the Google Document, ensuring streamlined communication."
+        "Actualizar automáticamente inventario, movimientos y alertas de stock.",
+        "Monitorear el comportamiento de los clientes y generar seguimientos automatizados.",
+        "Detectar oportunidades de venta o riesgo de abandono mediante patrones de uso.",
+        "Generar reportes operativos y comerciales con insights accionables.",
+        "Optimizar la asignación de recursos según demanda, rotación y performance."
       ],
       icon: "https://ext.same-assets.com/2264316469/3883820722.png"
     }
