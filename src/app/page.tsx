@@ -420,12 +420,10 @@ function AgentOSSection() {
             Sistema Meduzia
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Plataforma Inteligente<br />sistemas de nivel empresarial con precisión y escalabilidad.
+            Plataforma Inteligente<br/>sistemas de nivel empresarial con precisión y escalabilidad.
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
             Meduzia es una plataforma nativa de agentes de IA diseñada para empresas que buscan escalar con tecnología confiable.
-Su arquitectura modular y capacidad multiagente se adaptan a cualquier sistema existente, conectando procesos, optimizando decisiones y reduciendo fricción operativa.
-Es el núcleo inteligente que unifica automatización, análisis y ejecución en una sola solución.
           </p>
         </div>
 
