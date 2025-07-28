@@ -199,12 +199,10 @@ function AIAgentsSection() {
             AI Agents
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            AI Agents: Workforce With<br />Human-Level Performance
+            Agentes IA<br />que superan el rendimiento humano
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            AI agents deliver precise, efficient task automation, matching human-level
-            performance. They operate continuously, reducing errors and increasing productivity,
-            allowing businesses to scale fast without additional human resource costs.
+            Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo erroes. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
           </p>
           <Button className="gradient-primary text-white hover-glow">See all agents</Button>
         </div>
@@ -327,15 +325,13 @@ function WorkflowsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            Agentic Workflows
+            Un sistema que revoluciona tu negocio.
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            A Learning System to Optimize and<br />Automate Workflows. It's Possible.
+            Marketing, Atención y Gestión<br />Automatizamos el ciclo completo del cliente con IA
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            AI agents, powered by agentic workflows, leverage advanced learning systems to
-            autonomously identify and automate essential tasks. This dynamic adaptability keeps
-            operations smooth and responsive to changing demands.
+            Los agentes de Meduzia automatizan de punta a punta el recorrido del cliente: desde la generación del primer contacto con campañas virales y anuncios optimizados, hasta la atención automatizada en múltiples canales y la gestión operativa del negocio. Todo integrado, optimizando y escalando.
           </p>
           <Button className="gradient-primary text-white">See all workflows</Button>
         </div>
