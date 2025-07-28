@@ -142,45 +142,51 @@ function AIAgentsSection() {
 
   const agents = [
     {
-      title: "Resume Screening AI Agent",
-      category: "Human Resources & Recruitment",
-      workflows: ["Resume Intake", "Role-Based Scoring", "Fit Filtering"],
+      title: "Generación de Contenido Viral",
+      category: "Marketing y Publicidad",
+      workflows: ["Tendencias virales", "Identificación de patrones y lenguajes", "Creación de contenido"],
       image: "https://ext.same-assets.com/2264316469/348423250.png"
     },
     {
-      title: "Payroll Audit AI Agent",
-      category: "Human Resources & Recruitment",
-      workflows: ["Data Review", "Error Flagging", "Compliance Checks"],
+      title: "Agente de Meta Ads",
+      category: "Marketing y Publicidad",
+      workflows: ["Automatización de campañas", "Creación de contenido con testeos en vivo", "Evaluación continua de performance" , "escalado automático de anuncios ganadores"],
       image: "https://ext.same-assets.com/2264316469/3321369627.png"
     },
     {
-      title: "Interview Scheduling AI Agent",
-      category: "Human Resources & Recruitment",
-      workflows: ["Availability Matching", "Slot Suggestions", "Booking Confirmation"],
+      title: "Agentes Conversacionales",
+      category: "Whatsapp y Llamadas",
+      workflows: ["Atención automatizada vía WhatsApp y llamadas", "Seguimiento de leads y clientes", "Integración con CRM y workflows de negocio" , "Reuniones, envíos o pagos"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png"
     },
     {
-      title: "Customer Support AI Agent",
-      category: "Customer Service",
-      workflows: ["Query Analysis", "Response Generation", "Ticket Routing"],
+      title: "Automatización de Ventas",
+      category: "Gestión de Clientes",
+      workflows: ["Seguimiento automático de leads", "Priorización por scoring inteligente", "Integración con CRM y workflows de negocio" , "Recomendaciones de acción según comportamiento"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png"
+    },
+    {
+      title: "Analisis de Competencia",
+      category: "Data",
+      workflows: ["Monitoreo constante de competidores clave", "Comparación automatizada de precios, contenido y productos", "Detección de cambios en estrategias de marketing y posicionamiento", "Reportes periódicos con alertas de oportunidades"],
       image: "https://ext.same-assets.com/2264316469/348423250.png"
     },
     {
-      title: "Sales Automation AI Agent",
-      category: "Sales & Marketing",
-      workflows: ["Lead Qualification", "Follow-up Emails", "Pipeline Management"],
+      title: "Agente de Community Management",
+      category: "Instagram, Tiktok, Youtube, Linkedin",
+      workflows: ["Publicación en múltiples redes sociales", "Gestión automática de comentarios y mensajes", "Curación de contenido relevante para la comunidad"],
       image: "https://ext.same-assets.com/2264316469/3321369627.png"
     },
     {
-      title: "Document Processing AI Agent",
-      category: "Operations",
-      workflows: ["Data Extraction", "Classification", "Validation"],
+      title: "CRM Inteligente",
+      category: "Gestión",
+      workflows: ["Registro automático de interacciones multicanal", "Scoring dinámico de leads y clientes", "Seguimiento automatizado por etapa del funnel" , "Sincronización con agentes de ventas, marketing y atención"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png"
     },
     {
-      title: "Financial Analysis AI Agent",
-      category: "Finance & Accounting",
-      workflows: ["Report Generation", "Trend Analysis", "Risk Assessment"],
+      title: "Prospección por Google Maps",
+      category: "Ventas y Compras",
+      workflows: ["Búsqueda automatizada de negocios o perfiles en zonas específicas", "Extracción de información clave", "Enriquecimiento de datos con otras fuentes públicas"],
       image: "https://ext.same-assets.com/2264316469/348423250.png"
     }
   ]
@@ -303,7 +309,7 @@ function WorkflowsSection() {
     },
     {
       title: "Gestión de Clientes y Operaciones",
-      category: "Solución de gestión general",
+      category: "Solución de Gestión General",
       description: "Automatiza la gestión de clientes, inventario, oportunidades y decisiones comerciales con agentes de IA que supervisan, analizan y accionan de forma continua.",
       actions: [
         "Actualizar automáticamente inventario, movimientos y alertas de stock.",
