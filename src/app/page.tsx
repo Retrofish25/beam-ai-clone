@@ -660,22 +660,23 @@ function CTASection() {
 
 function FAQSection() {
   const faqs = [
-    {
-      question: "What is agentic AI?",
-      answer: "Agentic AI refers to autonomous AI systems that can act independently to achieve goals, make decisions, and perform tasks without constant human oversight."
-    },
-    {
-      question: "How can AI automation scale operations with intelligent agents?",
-      answer: "AI agents can handle repetitive tasks, process large volumes of data, and operate 24/7, allowing businesses to scale operations without proportional increases in human resources."
-    },
-    {
-      question: "What are our AI tools and their benefits?",
-      answer: "Our AI tools include workflow automation, document processing, customer service agents, and data analysis capabilities that reduce manual work and improve accuracy."
-    },
-    {
-      question: "What AI courses are available for businesses?",
-      answer: "We offer comprehensive training programs on agentic AI implementation, workflow design, and best practices for integrating AI agents into business operations."
-    }
+  {
+    question: "¿Qué es Meduzia?",
+    answer: "Meduzia es una plataforma de agentes de inteligencia artificial que automatiza tareas críticas en marketing, ventas, atención al cliente y gestión de operaciones, mejorando la eficiencia y reduciendo costos operativos."
+  },
+  {
+    question: "¿Cómo pueden los agentes de IA escalar mi negocio?",
+    answer: "Los agentes de IA de Meduzia operan 24/7, automatizando tareas repetitivas, analizando datos en tiempo real y tomando decisiones para ayudarte a escalar sin aumentar tu equipo humano."
+  },
+  {
+    question: "¿Qué tareas puede automatizar Meduzia?",
+    answer: "Meduzia automatiza desde la generación de contenido y anuncios, hasta la atención al cliente, prospección, análisis competitivo, gestión de clientes y oportunidades comerciales, todo con agentes especializados."
+  },
+  {
+    question: "¿Cómo se integran los agentes con mis sistemas?",
+    answer: "La arquitectura modular de Meduzia permite integrar fácilmente los agentes con CRM, herramientas de publicidad, plataformas de mensajería y otros sistemas ya existentes en tu negocio."
+  }
+]
   ]
 
   return (
@@ -686,7 +687,7 @@ function FAQSection() {
             FAQ
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Frequently Asked Questions
+            Preguntas Frecuentes
           </h2>
           <p className="text-xl text-gray-300 mb-12">
             Learn the answers to common questions about our AI solutions, tools, and services,
@@ -806,11 +807,11 @@ function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm">
-          <p>© Beam AI. All rights reserved 2025</p>
+          <p>© MEDUZIA AI. All rights reserved 2025</p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <div className="flex items-center space-x-2">
               <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <span>EN</span>
+              <span>ES</span>
             </div>
           </div>
         </div>
