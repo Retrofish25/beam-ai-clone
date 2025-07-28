@@ -62,11 +62,10 @@ function HeroSection() {
             Galería de Agentes
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Descubre Nuestros<br />
             Agentes de AI
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Explorá nuestra colección completa de agentes de inteligencia artificial especializados.
+            Colección completa de agentes de inteligencia artificial especializados.
             Cada agente está diseñado para automatizar tareas específicas y optimizar tu flujo de trabajo.
           </p>
           <Link href="/">
@@ -88,31 +87,31 @@ function AgentsGallery() {
 
   const agents = [
     {
-      title: "Resume Screening AI Agent",
-      category: "Recursos Humanos",
+      title: "Agente Creación de Contenido Viral",
+      category: "Marketing",
       description: "Analiza y evalúa CVs automáticamente, identificando candidatos que mejor se ajustan a los requisitos del puesto.",
       workflows: ["Análisis de CV", "Puntuación por roles", "Filtrado por aptitudes", "Detección de palabras clave"],
       image: "https://ext.same-assets.com/2264316469/348423250.png",
       tags: ["HR", "Recruiting", "Automation"]
     },
     {
-      title: "Payroll Audit AI Agent",
-      category: "Recursos Humanos",
+      title: "Agente Buscador de Referencias y Tendencias",
+      category: "Marketing",
       description: "Revisa y audita nóminas de manera automática, detectando errores y garantizando el cumplimiento normativo.",
       workflows: ["Revisión de datos", "Detección de errores", "Verificación de cumplimiento", "Reportes automáticos"],
       image: "https://ext.same-assets.com/2264316469/3321369627.png",
       tags: ["Payroll", "Audit", "Compliance"]
     },
     {
-      title: "Interview Scheduling AI Agent",
-      category: "Recursos Humanos",
+      title: "Agente Meta Ads",
+      category: "Publicidad y Marketing",
       description: "Coordina y programa entrevistas automáticamente, optimizando calendarios y enviando confirmaciones.",
       workflows: ["Búsqueda de disponibilidad", "Sugerencias de horarios", "Confirmación de citas", "Recordatorios automáticos"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png",
       tags: ["Scheduling", "Interviews", "Calendar"]
     },
     {
-      title: "Customer Service AI Agent",
+      title: "Agente de Optimización y Analisis de Contenido",
       category: "Atención al Cliente",
       description: "Proporciona soporte al cliente 24/7, resuelve consultas comunes y escalara casos complejos.",
       workflows: ["Análisis de consultas", "Respuestas automáticas", "Escalado inteligente", "Seguimiento de casos"],
@@ -120,7 +119,7 @@ function AgentsGallery() {
       tags: ["Support", "Customer", "24/7"]
     },
     {
-      title: "Sales Automation AI Agent",
+      title: "Agente de Whatsapp",
       category: "Ventas y Marketing",
       description: "Automatiza procesos de ventas, desde la calificación de leads hasta el seguimiento de oportunidades.",
       workflows: ["Calificación de leads", "Emails de seguimiento", "Gestión de pipeline", "Análisis de conversión"],
@@ -128,7 +127,7 @@ function AgentsGallery() {
       tags: ["Sales", "CRM", "Lead Generation"]
     },
     {
-      title: "Document Processing AI Agent",
+      title: "Agente de Llamadas por Voz",
       category: "Operaciones",
       description: "Procesa y extrae información de documentos automáticamente, clasificándolos y validando datos.",
       workflows: ["Extracción de datos", "Clasificación de documentos", "Validación automática", "Archivo digital"],
@@ -136,7 +135,7 @@ function AgentsGallery() {
       tags: ["OCR", "Document", "Processing"]
     },
     {
-      title: "Financial Analysis AI Agent",
+      title: "Agente de Categorización y Scoring de Clientes",
       category: "Finanzas y Contabilidad",
       description: "Analiza datos financieros, genera reportes y identifica tendencias y riesgos financieros.",
       workflows: ["Generación de reportes", "Análisis de tendencias", "Evaluación de riesgos", "Forecasting"],
@@ -144,7 +143,7 @@ function AgentsGallery() {
       tags: ["Finance", "Analytics", "Reporting"]
     },
     {
-      title: "Social Media Management AI Agent",
+      title: "Agente de Analisis de Competencia",
       category: "Marketing Digital",
       description: "Gestiona contenido en redes sociales, programa publicaciones y analiza engagement.",
       workflows: ["Programación de posts", "Análisis de engagement", "Respuesta automática", "Reportes de performance"],
@@ -160,7 +159,7 @@ function AgentsGallery() {
       tags: ["Inventory", "Supply Chain", "Forecasting"]
     },
     {
-      title: "Email Marketing AI Agent",
+      title: "Agente de Optimización y Evaluación en Meta Ads",
       category: "Marketing Digital",
       description: "Personaliza y automatiza campañas de email marketing basadas en comportamiento del usuario.",
       workflows: ["Segmentación automática", "Personalización de contenido", "A/B Testing", "Análisis de performance"],
@@ -168,7 +167,7 @@ function AgentsGallery() {
       tags: ["Email", "Marketing", "Personalization"]
     },
     {
-      title: "Quality Assurance AI Agent",
+      title: "Agente de SEO",
       category: "Control de Calidad",
       description: "Automatiza procesos de control de calidad, detecta defectos y genera reportes de conformidad.",
       workflows: ["Inspección automática", "Detección de defectos", "Reportes de calidad", "Análisis de tendencias"],
@@ -176,7 +175,7 @@ function AgentsGallery() {
       tags: ["QA", "Quality Control", "Inspection"]
     },
     {
-      title: "Project Management AI Agent",
+      title: "Agente de Gestion de Stock y Envíos",
       category: "Gestión de Proyectos",
       description: "Asiste en la planificación y seguimiento de proyectos, optimizando recursos y tiempos.",
       workflows: ["Planificación automática", "Seguimiento de progreso", "Gestión de recursos", "Alertas de riesgo"],
@@ -184,7 +183,7 @@ function AgentsGallery() {
       tags: ["Project Management", "Planning", "Resources"]
     },
     {
-      title: "Content Creation AI Agent",
+      title: "Agente Coordinador de Reuniones",
       category: "Creación de Contenido",
       description: "Genera contenido automatizado para blogs, redes sociales y materiales de marketing.",
       workflows: ["Generación de contenido", "Optimización SEO", "Adaptación de formatos", "Programación de publicación"],
@@ -192,7 +191,7 @@ function AgentsGallery() {
       tags: ["Content", "SEO", "Writing"]
     },
     {
-      title: "Cybersecurity AI Agent",
+      title: "Agente de Oportunidades en Sitio Web",
       category: "Seguridad Informática",
       description: "Monitorea amenazas de seguridad, detecta anomalías y responde automáticamente a incidentes.",
       workflows: ["Monitoreo de amenazas", "Detección de anomalías", "Respuesta automática", "Reportes de seguridad"],
@@ -200,7 +199,7 @@ function AgentsGallery() {
       tags: ["Security", "Monitoring", "Incident Response"]
     },
     {
-      title: "Legal Document AI Agent",
+      title: "Agente de Prospección en Google Maps",
       category: "Legal y Compliance",
       description: "Revisa y analiza documentos legales, identifica cláusulas importantes y verifica cumplimiento.",
       workflows: ["Análisis de contratos", "Identificación de cláusulas", "Verificación de compliance", "Gestión de documentos"],
@@ -208,7 +207,7 @@ function AgentsGallery() {
       tags: ["Legal", "Contracts", "Compliance"]
     },
     {
-      title: "Training & Development AI Agent",
+      title: "Agente de Últimas Noticias",
       category: "Desarrollo Profesional",
       description: "Personaliza programas de capacitación, evalúa progreso y recomienda contenido educativo.",
       workflows: ["Personalización de contenido", "Evaluación de progreso", "Recomendaciones de cursos", "Seguimiento de objetivos"],
@@ -216,7 +215,7 @@ function AgentsGallery() {
       tags: ["Training", "Development", "Learning"]
     },
     {
-      title: "Predictive Maintenance AI Agent",
+      title: "Agente de Facturación",
       category: "Mantenimiento Industrial",
       description: "Predice fallos en equipos, programa mantenimiento preventivo y optimiza costos operativos.",
       workflows: ["Monitoreo de equipos", "Predicción de fallos", "Programación de mantenimiento", "Optimización de costos"],
@@ -224,7 +223,7 @@ function AgentsGallery() {
       tags: ["Maintenance", "Predictive", "Industrial"]
     },
     {
-      title: "Data Analytics AI Agent",
+      title: "Agente de Data Analytics",
       category: "Análisis de Datos",
       description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
@@ -232,7 +231,7 @@ function AgentsGallery() {
       tags: ["Analytics", "Big Data", "Insights"]
     },
     {
-      title: "Data 2222Analytics AI Agent2",
+      title: "Agente de Community Management",
       category: "Análisis de Datos",
       description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
@@ -240,7 +239,7 @@ function AgentsGallery() {
       tags: ["Analytics", "Big Data", "Insights"]
     },
     {
-      title: "Data 4444222Analytics AI Agent2",
+      title: "Agente de Google Ads Prformance",
       category: "Análisis de Datos",
       description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
@@ -248,13 +247,37 @@ function AgentsGallery() {
       tags: ["Analytics", "Big Data", "Insights"]
     },
     {
-      title: "Data080-42552Analytics AI Agent2",
+      title: "Agente de Seguimiento Comercial",
       category: "Análisis de Datos",
       description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
       workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
       image: "https://ext.same-assets.com/2264316469/1476774670.png",
       tags: ["Analytics", "Big Data", "Insights"]
-    }
+    },
+    {
+      title: "Agente Agente de Pricing Dinámico",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
+    },
+    {
+      title: "Agente de Agente de Actualización de Dashboards",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
+    },
+    {
+      title: "Agente de Emails",
+      category: "Análisis de Datos",
+      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
+      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
+      image: "https://ext.same-assets.com/2264316469/1476774670.png",
+      tags: ["Analytics", "Big Data", "Insights"]
+    },
   ]
 
   return (
