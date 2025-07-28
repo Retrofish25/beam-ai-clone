@@ -196,7 +196,7 @@ function AIAgentsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className={`text-center mb-16 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
           <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            AI Agents
+            Agentes IA
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Agentes IA<br />que superan el rendimiento humano
@@ -204,7 +204,7 @@ function AIAgentsSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo erroes. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
           </p>
-          <Button className="gradient-primary text-white hover-glow">See all agents</Button>
+          <Button className="gradient-primary text-white hover-glow">Ver todos los Agentes</Button>
         </div>
 
         <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
@@ -283,7 +283,7 @@ function WorkflowsSection() {
 
   const workflows = [
     {
-      title: "Ejecución de Marketing Automatizado",
+      title: "Marketing Automatizado",
       category: "Marketing y Publicidad",
       description: "Automatizá todo tu flujo de trabajo de marketing con agentes de IA que crean lenguajes y contenido en múltiples canales para maximizar el alcance y la conversión.",
       actions: [
@@ -333,7 +333,7 @@ function WorkflowsSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Los agentes de Meduzia automatizan de punta a punta el recorrido del cliente: desde la generación del primer contacto con campañas virales y anuncios optimizados, hasta la atención automatizada en múltiples canales y la gestión operativa del negocio. Todo integrado, optimizando y escalando.
           </p>
-          <Button className="gradient-primary text-white">See all workflows</Button>
+          <Button className="gradient-primary text-white">Ver más</Button>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -376,12 +376,11 @@ function BenefitsSection() {
             Benefits
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Improve Operational Efficiency<br />and Create Leverage. Fast.
+            Mejorá tu Marketing, Ventas y Eficiencia Operacional.<br />tu oportunidad de crear ventajas.
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
-            Deploy AI agents to streamline operations and amplify your business's efficiency. These
-            agents optimize processes, reduce delays, and enhance output, ensuring you gain a
-            competitive edge with speed and precision.
+Implementá agentes de IA para escalar tus campañas, generar leads calificados y acelerar cada etapa del embudo comercial.  
+  Automatizá tareas repetitivas, identificá oportunidades en tiempo real y mejorá la conversión sin aumentar tus costos operativos.
           </p>
         </div>
 
@@ -389,7 +388,7 @@ function BenefitsSection() {
           <div className="md:col-span-1">
             <Card className="gradient-primary p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
-                Integrate AI Agents Into<br />Your Organization Structure
+                Integrar Agentes IA<br />en el organigrama de tu negocio.
               </h3>
             </Card>
           </div>
@@ -397,15 +396,15 @@ function BenefitsSection() {
           <div className="md:col-span-3 grid md:grid-cols-3 gap-6">
             <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
               <div className="text-4xl font-bold text-white mb-2">93%</div>
-              <p className="text-gray-300 text-sm">Reduction in time eliminated tasks</p>
+              <p className="text-gray-300 text-sm">tiempo reducido en tareas eliminadas</p>
             </Card>
             <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
               <div className="text-4xl font-bold text-white mb-2">100%</div>
-              <p className="text-gray-300 text-sm">Automation of repetitive tasks</p>
+              <p className="text-gray-300 text-sm">Automatización de las tareas repetitivas</p>
             </Card>
             <Card className="gradient-card glass-border bg-transparent border-white/10 p-8 text-center">
               <div className="text-4xl font-bold text-white mb-2">85%</div>
-              <p className="text-gray-300 text-sm">Faster aggregation of data</p>
+              <p className="text-gray-300 text-sm">Optimización de data</p>
             </Card>
           </div>
         </div>
