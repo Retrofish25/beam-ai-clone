@@ -86,94 +86,136 @@ function AgentsGallery() {
   const { ref, isIntersecting } = useIntersectionObserver()
 
   const agents = [
-    {
-      title: "Agente Creación de Contenido Viral",
-      category: "Marketing",
-      description: "Analiza y evalúa CVs automáticamente, identificando candidatos que mejor se ajustan a los requisitos del puesto.",
-      workflows: ["Análisis de CV", "Puntuación por roles", "Filtrado por aptitudes", "Detección de palabras clave"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png",
-      tags: ["HR", "Recruiting", "Automation"]
-    },
-    {
-      title: "Agente Buscador de Referencias y Tendencias",
-      category: "Marketing",
-      description: "Revisa y audita nóminas de manera automática, detectando errores y garantizando el cumplimiento normativo.",
-      workflows: ["Revisión de datos", "Detección de errores", "Verificación de cumplimiento", "Reportes automáticos"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png",
-      tags: ["Payroll", "Audit", "Compliance"]
-    },
-    {
-      title: "Agente Meta Ads",
-      category: "Publicidad y Marketing",
-      description: "Coordina y programa entrevistas automáticamente, optimizando calendarios y enviando confirmaciones.",
-      workflows: ["Búsqueda de disponibilidad", "Sugerencias de horarios", "Confirmación de citas", "Recordatorios automáticos"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Scheduling", "Interviews", "Calendar"]
-    },
-    {
-      title: "Agente de Optimización y Analisis de Contenido",
-      category: "Atención al Cliente",
-      description: "Proporciona soporte al cliente 24/7, resuelve consultas comunes y escalara casos complejos.",
-      workflows: ["Análisis de consultas", "Respuestas automáticas", "Escalado inteligente", "Seguimiento de casos"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png",
-      tags: ["Support", "Customer", "24/7"]
-    },
-    {
-      title: "Agente de Whatsapp",
-      category: "Ventas y Marketing",
-      description: "Automatiza procesos de ventas, desde la calificación de leads hasta el seguimiento de oportunidades.",
-      workflows: ["Calificación de leads", "Emails de seguimiento", "Gestión de pipeline", "Análisis de conversión"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png",
-      tags: ["Sales", "CRM", "Lead Generation"]
-    },
-    {
-      title: "Agente de Llamadas por Voz",
-      category: "Operaciones",
-      description: "Procesa y extrae información de documentos automáticamente, clasificándolos y validando datos.",
-      workflows: ["Extracción de datos", "Clasificación de documentos", "Validación automática", "Archivo digital"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["OCR", "Document", "Processing"]
-    },
-    {
-      title: "Agente de Categorización y Scoring de Clientes",
-      category: "Finanzas y Contabilidad",
-      description: "Analiza datos financieros, genera reportes y identifica tendencias y riesgos financieros.",
-      workflows: ["Generación de reportes", "Análisis de tendencias", "Evaluación de riesgos", "Forecasting"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png",
-      tags: ["Finance", "Analytics", "Reporting"]
-    },
-    {
-      title: "Agente de Analisis de Competencia",
-      category: "Marketing Digital",
-      description: "Gestiona contenido en redes sociales, programa publicaciones y analiza engagement.",
-      workflows: ["Programación de posts", "Análisis de engagement", "Respuesta automática", "Reportes de performance"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png",
-      tags: ["Social Media", "Content", "Analytics"]
-    },
-    {
-      title: "Inventory Management AI Agent",
-      category: "Logística y Supply Chain",
-      description: "Optimiza inventarios, predice demanda y automatiza órdenes de reposición.",
-      workflows: ["Monitoreo de stock", "Predicción de demanda", "Órdenes automáticas", "Optimización de costos"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Inventory", "Supply Chain", "Forecasting"]
-    },
-    {
-      title: "Agente de Optimización y Evaluación en Meta Ads",
-      category: "Marketing Digital",
-      description: "Personaliza y automatiza campañas de email marketing basadas en comportamiento del usuario.",
-      workflows: ["Segmentación automática", "Personalización de contenido", "A/B Testing", "Análisis de performance"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png",
-      tags: ["Email", "Marketing", "Personalization"]
-    },
-    {
-      title: "Agente de SEO",
-      category: "Control de Calidad",
-      description: "Automatiza procesos de control de calidad, detecta defectos y genera reportes de conformidad.",
-      workflows: ["Inspección automática", "Detección de defectos", "Reportes de calidad", "Análisis de tendencias"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png",
-      tags: ["QA", "Quality Control", "Inspection"]
-    },
+{
+    title: "Agente Creación de Contenido Viral",
+    category: "Marketing",
+    description: "Crea contenido basado en lenguaje viral, temas en tendencia y diferentes ángulos de venta para captar la atención de tu audiencia.",
+    workflows: [
+      "Análisis de tendencias en redes sociales",
+      "Generación de copies con lenguaje viral",
+      "Diseño de creatividades dinámicas",
+      "Publicación automatizada en múltiples canales"
+    ],
+    image: "https://ext.same-assets.com/2264316469/348423250.png",
+    tags: ["Contenido", "Social Media", "Automatización"]
+  },
+  {
+    title: "Agente Buscador de Referencias y Tendencias",
+    category: "Marketing",
+    description: "Escanea múltiples plataformas para detectar contenidos de alto impacto, referencias virales y oportunidades creativas.",
+    workflows: [
+      "Monitoreo de TikTok, IG, Linkedin y YouTube",
+      "Curación de contenido y referencias virales",
+      "Identificación de patrones de éxito",
+      "Sugerencias creativas automatizadas"
+    ],
+    image: "https://ext.same-assets.com/2264316469/3321369627.png",
+    tags: ["Tendencias", "Análisis", "Benchmark"]
+  },
+  {
+    title: "Agente Meta Ads",
+    category: "Publicidad y Marketing",
+    description: "Lanza, optimiza y escala campañas publicitarias en Meta seleccionando creatividades ganadoras y controlando el presupuesto de forma automática.",
+    workflows: [
+      "Creación de campañas y conjuntos de anuncios",
+      "Testing de múltiples ángulos y audiencias",
+      "Detección automática de creatividades ganadoras",
+      "Ajuste de presupuesto y optimización continua"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Meta Ads", "Performance", "Campañas"]
+  },
+  {
+    title: "Agente de Optimización y Análisis de Contenido",
+    category: "Contenido",
+    description: "Evalúa, prueba y mejora el rendimiento de contenido en diferentes plataformas para maximizar conversiones y engagement.",
+    workflows: [
+      "A/B testing de copies y visuales",
+      "Análisis de métricas de contenido",
+      "Adaptación por canal y audiencia",
+      "Generación de reportes y mejoras continuas"
+    ],
+    image: "https://ext.same-assets.com/2264316469/348423250.png",
+    tags: ["Copy", "Creatividad", "Optimización"]
+  },
+  {
+    title: "Agente de WhatsApp",
+    category: "Conversación y Ventas",
+    description: "Responde consultas, automatiza seguimientos y genera oportunidades en tiempo real desde WhatsApp.",
+    workflows: [
+      "Detección de intención en tiempo real",
+      "Respuesta instantánea y personalizada",
+      "Seguimiento automatizado de leads",
+      "Escalamiento a humanos si es necesario"
+    ],
+    image: "https://ext.same-assets.com/2264316469/3321369627.png",
+    tags: ["WhatsApp", "Chatbots", "Atención"]
+  },
+  {
+    title: "Agente de Llamadas por Voz",
+    category: "Conversación y Atención",
+    description: "Realiza llamadas automatizadas para ventas, encuestas o seguimiento, con comprensión del lenguaje natural.",
+    workflows: [
+      "Marcado automático de números",
+      "Reconocimiento de intención en llamadas",
+      "Respuestas habladas personalizadas",
+      "Derivación a humanos si es necesario"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Voz", "Callbots", "Conversación"]
+  },
+  {
+    title: "Agente de Categorización y Scoring de Clientes",
+    category: "Ventas y CRM",
+    description: "Clasifica, puntúa y segmenta clientes en tiempo real para priorizar oportunidades y optimizar el ciclo comercial.",
+    workflows: [
+      "Evaluación de comportamiento y atributos",
+      "Asignación de puntaje por nivel de interés",
+      "Segmentación dinámica de base de datos",
+      "Actualización automática de CRM"
+    ],
+    image: "https://ext.same-assets.com/2264316469/348423250.png",
+    tags: ["CRM", "Scoring", "Segmentación"]
+  },
+  {
+    title: "Agente de Análisis de Competencia",
+    category: "Marketing Digital",
+    description: "Investiga y monitorea a tus competidores para detectar ventajas competitivas, cambios de estrategia y oportunidades.",
+    workflows: [
+      "Scraping de webs y redes sociales de competidores",
+      "Análisis de precios, productos y comunicación",
+      "Generación de benchmarks visuales",
+      "Alertas por movimientos relevantes"
+    ],
+    image: "https://ext.same-assets.com/2264316469/3321369627.png",
+    tags: ["Competencia", "Benchmark", "Market Intelligence"]
+  },
+  {
+    title: "Agente de Gestión de Inventario",
+    category: "Operaciones y Logística",
+    description: "Supervisa niveles de stock, predice demanda y automatiza órdenes de reposición en tiempo real.",
+    workflows: [
+      "Control automatizado de entradas y salidas",
+      "Alertas por bajo stock",
+      "Predicción de quiebres por IA",
+      "Generación de órdenes a proveedores"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Inventario", "Stock", "Reposición"]
+  },
+  {
+    title: "Agente de SEO Inteligente",
+    category: "Marketing Digital",
+    description: "Audita, mejora y posiciona tu sitio web en buscadores optimizando contenidos, enlaces y estructura técnica.",
+    workflows: [
+      "Análisis de keywords",
+      "Detección de errores técnicos",
+      "Recomendaciones de mejoras on-page",
+      "Generación de contenido SEO"
+    ],
+    image: "https://ext.same-assets.com/2264316469/348423250.png",
+    tags: ["SEO", "Ranking", "Optimización Web"]
+  },
     {
       title: "Agente de Gestion de Stock y Envíos",
       category: "Gestión de Proyectos",
@@ -230,54 +272,110 @@ function AgentsGallery() {
       image: "https://ext.same-assets.com/2264316469/1476774670.png",
       tags: ["Analytics", "Big Data", "Insights"]
     },
-    {
-      title: "Agente de Community Management",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    },
-    {
-      title: "Agente de Google Ads Prformance",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    },
-    {
-      title: "Agente de Seguimiento Comercial",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    },
-    {
-      title: "Agente Agente de Pricing Dinámico",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    },
-    {
-      title: "Agente de Agente de Actualización de Dashboards",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    },
-    {
-      title: "Agente de Emails",
-      category: "Análisis de Datos",
-      description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
-      workflows: ["Procesamiento de datos", "Identificación de patrones", "Generación de insights", "Visualización automática"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png",
-      tags: ["Analytics", "Big Data", "Insights"]
-    }
+     {
+    title: "Agente de Community Management",
+    category: "Marketing Digital",
+    description: "Gestiona comunidades en redes sociales automatizando interacciones y mejorando el engagement de tu marca.",
+    workflows: [
+      "Respuesta automática a mensajes y comentarios",
+      "Moderación de comunidades con IA",
+      "Identificación de oportunidades de interacción",
+      "Generación de reportes de actividad y engagement"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Community", "Social Media", "Engagement"]
+  },
+  {
+    title: "Agente de Google Ads Performance",
+    category: "Publicidad",
+    description: "Optimiza campañas de Google Ads en tiempo real para maximizar conversiones y reducir costos.",
+    workflows: [
+      "Creación y ajuste de campañas automáticamente",
+      "Testing de palabras clave y anuncios",
+      "Asignación dinámica de presupuestos",
+      "Generación de reportes de rendimiento"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Google Ads", "Performance", "Publicidad"]
+  },
+  {
+    title: "Agente de Seguimiento Comercial",
+    category: "Ventas",
+    description: "Automatiza el seguimiento de prospectos y clientes, asegurando que ningún lead se pierda en el pipeline.",
+    workflows: [
+      "Recordatorios automáticos de seguimiento",
+      "Envío de emails y mensajes personalizados",
+      "Actualización de estado en el CRM",
+      "Alertas de leads de alta prioridad"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Ventas", "Seguimiento", "CRM"]
+  },
+  {
+    title: "Agente de Pricing Dinámico",
+    category: "Inteligencia Comercial",
+    description: "Ajusta los precios de tus productos o servicios en función de la demanda, competencia y márgenes en tiempo real.",
+    workflows: [
+      "Análisis de elasticidad de precios",
+      "Monitoreo de precios de la competencia",
+      "Optimización automática de precios",
+      "Reportes de rentabilidad y margen"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Precios", "Optimización", "Revenue"]
+  },
+  {
+    title: "Agente de Actualización de Dashboards",
+    category: "Análisis y Reportes",
+    description: "Actualiza visualizaciones y dashboards automáticamente con los datos más relevantes de tu operación.",
+    workflows: [
+      "Integración con fuentes de datos",
+      "Actualización automática en tiempo real",
+      "Detección de anomalías en métricas",
+      "Distribución programada de reportes"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Dashboards", "Reporting", "BI"]
+  },
+  {
+    title: "Agente de Emails Automatizados",
+    category: "Marketing y Comunicación",
+    description: "Envía emails personalizados basados en comportamiento del usuario, campañas y triggers automatizados.",
+    workflows: [
+      "Segmentación dinámica de listas",
+      "Envío automatizado según eventos",
+      "Personalización con IA del contenido",
+      "Análisis de tasas de apertura y respuesta"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Email", "Automatización", "Campañas"]
+  },
+  {
+    title: "Agente de Data Analytics",
+    category: "Análisis de Datos",
+    description: "Analiza grandes volúmenes de datos para descubrir patrones, generar insights accionables y apoyar la toma de decisiones.",
+    workflows: [
+      "Procesamiento automatizado de datos",
+      "Identificación de tendencias y anomalías",
+      "Generación de reportes en tiempo real",
+      "Recomendaciones inteligentes"
+    ],
+    image: "https://ext.same-assets.com/2264316469/1476774670.png",
+    tags: ["Analytics", "Insights", "Big Data"]
+  },
+  {
+    title: "Agente de Facturación Inteligente",
+    category: "Finanzas y Administración",
+    description: "Genera facturas automáticamente, valida datos y gestiona cobros con integración contable.",
+    workflows: [
+      "Generación automática de facturas",
+      "Validación de datos de clientes y montos",
+      "Seguimiento de pagos y vencimientos",
+      "Envío automático por email o API"
+    ],
+    image: "https://ext.same-assets.com/2264316469/3321369627.png",
+    tags: ["Facturación", "Pagos", "Cobros"]
+  }
   ]
 
   return (
