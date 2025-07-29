@@ -153,7 +153,7 @@ function AIAgentsSection() {
       title: "Generación de Contenido Viral",
       category: "Marketing y Publicidad",
       workflows: ["Tendencias virales", "Identificación de patrones y lenguajes", "Creación de contenido"],
-      image: "https://ibb.co/Qjdxxzf7.png"
+      image: "https://i.imgur.com/46mwh16.png"
     },
     {
       title: "Agente de Meta Ads",
@@ -165,13 +165,13 @@ function AIAgentsSection() {
       title: "Agentes Conversacionales",
       category: "Whatsapp y Llamadas",
       workflows: ["Atención automatizada vía WhatsApp y llamadas", "Seguimiento de leads y clientes", "Integración con CRM y workflows de negocio" , "Reuniones, envíos o pagos"],
-      image: "https://imgur.com/a/OPp5rbk.png"
+      image: "https://i.imgur.com/qP4yLJo.png"
     },
     {
       title: "Automatización de Ventas",
       category: "Gestión de Clientes",
       workflows: ["Seguimiento automático de leads", "Priorización por scoring inteligente", "Integración con CRM y workflows de negocio" , "Recomendaciones de acción según comportamiento"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png"
+      image: "https://i.imgur.com/xQoB4mr.png"
     },
     {
       title: "Analisis de Competencia",
