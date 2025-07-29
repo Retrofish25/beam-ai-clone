@@ -257,14 +257,6 @@ function AgentsGallery() {
       tags: ["Training", "Development", "Learning"]
     },
     {
-      title: "Agente de Facturación",
-      category: "Mantenimiento Industrial",
-      description: "Predice fallos en equipos, programa mantenimiento preventivo y optimiza costos operativos.",
-      workflows: ["Monitoreo de equipos", "Predicción de fallos", "Programación de mantenimiento", "Optimización de costos"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png",
-      tags: ["Maintenance", "Predictive", "Industrial"]
-    },
-    {
       title: "Agente de Data Analytics",
       category: "Análisis de Datos",
       description: "Analiza grandes volúmenes de datos, identifica patrones y genera insights accionables.",
