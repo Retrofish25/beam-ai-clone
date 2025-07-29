@@ -625,9 +625,6 @@ function NewsSection() {
         </div>
 
         <div className="text-center mt-8">
-          <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
-            See all Posts
-          </Button>
         </div>
       </div>
     </section>
