@@ -104,7 +104,6 @@ function HeroSection() {
     </h1>
   </div>
 </div>
-        </div>
       </div>
     </section>
   )
