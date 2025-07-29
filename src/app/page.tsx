@@ -78,16 +78,23 @@ function HeroSection() {
          Solicitar Demo
           </Button>
         </div>
+        
+        <div className="relative w-full h-screen overflow-hidden">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <source src="https://player.cloudinary.com/embed/?cloud_name=duxhjhuma&public_id=background01_kbkk8s&profile=cld-default" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
 
-        <div className={`mt-16 relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.3s' }}>
-          <div className={`relative w-full h-screen overflow-hidden ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.3s' }}>
-  <img
-    src="https://ext.same-assets.com/2264316469/3033932722.png"
-    alt="Medusia Dashboard"
-    className="w-full h-full object-cover object-center"
-    loading="lazy"
-  />
-</div>
+  {/* Opcional: contenido encima */}
+  <div className="relative z-10 flex items-center justify-center h-full">
+    <h1 className="text-white text-5xl font-bold">Medusia</h1>
+  </div>
         </div>
       </div>
     </section>
