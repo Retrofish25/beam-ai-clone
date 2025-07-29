@@ -159,7 +159,7 @@ function AIAgentsSection() {
       title: "Agente de Meta Ads",
       category: "Marketing y Publicidad",
       workflows: ["Automatización de campañas", "Creación de contenido con testeos en vivo", "Evaluación continua de performance" , "escalado automático de anuncios ganadores"],
-      image: "https://imgur.com/a/OPp5rbk.png"
+      image: "https://i.imgur.com/ym41Mva.png"
     },
     {
       title: "Agentes Conversacionales",
