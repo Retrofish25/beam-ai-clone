@@ -165,7 +165,7 @@ function AIAgentsSection() {
       title: "Agentes Conversacionales",
       category: "Whatsapp y Llamadas",
       workflows: ["Atención automatizada vía WhatsApp y llamadas", "Seguimiento de leads y clientes", "Integración con CRM y workflows de negocio" , "Reuniones, envíos o pagos"],
-      image: "https://i.imgur.com/9bIcpRA.png"
+      image: "https://imgur.com/a/OPp5rbk"
     },
     {
       title: "Automatización de Ventas",
