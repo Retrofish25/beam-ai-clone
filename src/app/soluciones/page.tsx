@@ -83,16 +83,6 @@ function HeroSection() {
             optimizando procesos complejos y creando ventajas competitivas sostenibles
             en las industrias más exigentes del mundo.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-              Ver Casos de Éxito
-            </Button>
-            <Link href="/agentes">
-              <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
-                Explorar Agentes
-              </Button>
-            </Link>
-          </div>
         </div>
       </div>
     </section>
