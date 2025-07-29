@@ -256,12 +256,12 @@ function SolutionCard({ solution, index, isVisible }: { solution: SolutionData, 
 
         <div className="space-y-4">
           <div>
-            <h4 className="text-lg font-semibold text-red-400 mb-2">🚫 Desafío Actual</h4>
+            <h4 className="text-lg font-semibold text-red-400 mb-2">Desafío Actual</h4>
             <p className="text-gray-300 leading-relaxed">{solution.problem}</p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-green-400 mb-2">✅ Nuestra Solución</h4>
+            <h4 className="text-lg font-semibold text-green-400 mb-2">Nuestra Solución</h4>
             <p className="text-gray-300 leading-relaxed mb-3">{solution.solution}</p>
             <div className="flex flex-wrap gap-2">
               {solution.agents.map((agent, idx) => (
@@ -273,7 +273,7 @@ function SolutionCard({ solution, index, isVisible }: { solution: SolutionData, 
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-blue-400 mb-3">📊 Resultados Comprobados</h4>
+            <h4 className="text-lg font-semibold text-blue-400 mb-3">Resultados Comprobados</h4>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {solution.benefits.map((benefit, idx) => (
                 <div key={idx} className="bg-blue-500/10 rounded-lg p-3 border border-blue-500/20">
