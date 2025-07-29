@@ -177,7 +177,7 @@ function AIAgentsSection() {
       title: "Analisis de Competencia",
       category: "Data",
       workflows: ["Monitoreo constante de competidores clave", "Comparación automatizada de precios, contenido y productos", "Detección de cambios en estrategias de marketing y posicionamiento", "Reportes periódicos con alertas de oportunidades"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png"
+      image: "https://i.imgur.com/kKZX3Pc.png"
     },
     {
       title: "Agente de Community Management",
