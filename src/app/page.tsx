@@ -183,19 +183,19 @@ function AIAgentsSection() {
       title: "Agente de Community Management",
       category: "Instagram, Tiktok, Youtube, Linkedin",
       workflows: ["Publicación en múltiples redes sociales", "Gestión automática de comentarios y mensajes", "Curación de contenido relevante para la comunidad"],
-      image: "https://ext.same-assets.com/2264316469/3321369627.png"
+      image: "https://i.imgur.com/5f1A8ui.png"
     },
     {
       title: "CRM Inteligente",
       category: "Gestión",
       workflows: ["Registro automático de interacciones multicanal", "Scoring dinámico de leads y clientes", "Seguimiento automatizado por etapa del funnel" , "Sincronización con agentes de ventas, marketing y atención"],
-      image: "https://ext.same-assets.com/2264316469/1476774670.png"
+      image: "https://i.imgur.com/ZUsVwbD.png"
     },
     {
       title: "Prospección por Google Maps",
       category: "Ventas y Compras",
       workflows: ["Búsqueda automatizada de negocios o perfiles en zonas específicas", "Extracción de información clave", "Enriquecimiento de datos con otras fuentes públicas"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png"
+      image: "https://i.imgur.com/pcHrdrw.png"
     }
   ]
 
