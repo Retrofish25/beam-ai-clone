@@ -87,7 +87,7 @@ function HeroSection() {
     playsInline
     className="absolute top-0 left-0 w-full h-full object-cover"
   >
-    <source src="https://player.cloudinary.com/embed/?cloud_name=duxhjhuma&public_id=background01_kbkk8s&profile=meduzia" />
+    <source src="https://res.cloudinary.com/duxhjhuma/video/upload/background01_kbkk8s.mp4" />
     Tu navegador no soporta videos HTML5.
   </video>
 
