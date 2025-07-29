@@ -642,12 +642,17 @@ function CTASection() {
         </div>
 
         <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto">
-          <img
-            src="https://ext.same-assets.com/2264316469/1038128939.png"
-            alt="Beam AI Workflow Builder"
-            className="w-full h-auto rounded-lg"
-          />
-        </div>
+  <div className="relative aspect-video w-full rounded-lg overflow-hidden">
+    <iframe
+      className="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/ZFiPWrdZxR0"
+      title="Video de Medusia"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
       </div>
     </section>
   );
