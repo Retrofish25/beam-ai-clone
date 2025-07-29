@@ -799,7 +799,6 @@ function Footer() {
               <li><a href="#" className="hover:text-white transition-colors">Security</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Data Protection</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Imprint</a></li>
             </ul>
           </div>
         </div>
