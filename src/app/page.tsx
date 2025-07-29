@@ -153,7 +153,7 @@ function AIAgentsSection() {
       title: "Generación de Contenido Viral",
       category: "Marketing y Publicidad",
       workflows: ["Tendencias virales", "Identificación de patrones y lenguajes", "Creación de contenido"],
-      image: "https://ext.same-assets.com/2264316469/348423250.png"
+      image: "https://ibb.co/Qjdxxzf7.png"
     },
     {
       title: "Agente de Meta Ads",
