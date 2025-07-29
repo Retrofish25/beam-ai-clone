@@ -300,7 +300,7 @@ function WorkflowsSection() {
         "Monitorear métricas de rendimiento y ajustar la estrategia en tiempo real.",
         "Probar variaciones creativas (copy, visuales, formatos) para detectar lo que mejor funciona."
       ],
-      icon: "https://i.imgur.com/BeHPIvS.png"
+      icon: "https://i.imgur.com/kc4PAj7.png"
     },
     {
       title: "Atención al Cliente",
