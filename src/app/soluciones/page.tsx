@@ -96,7 +96,7 @@ function IndustrySolutions() {
   const solutions = [
     {
       industry: "Banca y Finanzas",
-      icon: "🏦",
+      icon: "",
       problem: "Procesos manuales lentos, alto riesgo de fraude y evaluación crediticia inconsistente",
       solution: "Combinación de agentes para análisis de riesgo, detección de fraude y automatización de procesos",
       agents: ["Risk Assessment AI", "Fraud Detection AI", "Document Processing AI"],
@@ -106,7 +106,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Salud y Medicina",
-      icon: "🏥",
+      icon: "",
       problem: "Gestión ineficiente de pacientes, diagnósticos tardíos y sobrecarga administrativa",
       solution: "Ecosystem de agentes para gestión de pacientes, análisis diagnóstico y automatización administrativa",
       agents: ["Patient Management AI", "Diagnostic Support AI", "Scheduling AI"],
@@ -116,7 +116,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Retail y E-commerce",
-      icon: "🛍️",
+      icon: "",
       problem: "Gestión de inventario compleja, atención al cliente 24/7 y personalización a escala",
       solution: "Suite de agentes para inventario inteligente, soporte multicanal y recomendaciones personalizadas",
       agents: ["Inventory Management AI", "Customer Service AI", "Recommendation AI"],
@@ -126,7 +126,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Manufactura Industrial",
-      icon: "🏭",
+      icon: "",
       problem: "Fallos de equipo impredecibles, control de calidad manual y planificación de mantenimiento reactiva",
       solution: "Red de agentes para mantenimiento predictivo, control de calidad automático y optimización de producción",
       agents: ["Predictive Maintenance AI", "Quality Control AI", "Production Optimization AI"],
@@ -137,7 +137,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Recursos Humanos",
-      icon: "👥",
+      icon: "",
       problem: "Procesos de reclutamiento lentos, sesgo en selección y gestión manual de empleados",
       solution: "Plataforma de agentes para reclutamiento inteligente, onboarding automático y gestión de talento",
       agents: ["Resume Screening AI", "Interview Scheduling AI", "Performance Analysis AI"],
@@ -148,7 +148,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Legal y Compliance",
-      icon: "⚖️",
+      icon: "",
       problem: "Revisión manual de documentos, compliance complejo y análisis de contratos tiempo-intensivo",
       solution: "Sistema de agentes para análisis legal automático, compliance monitoring y gestión de documentos",
       agents: ["Legal Document AI", "Compliance Monitor AI", "Contract Analysis AI"],
@@ -159,7 +159,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Logística y Transporte",
-      icon: "🚛",
+      icon: "",
       problem: "Optimización de rutas manual, gestión de flota ineficiente y seguimiento limitado",
       solution: "Ecosystem de agentes para optimización de rutas, gestión de flota y seguimiento en tiempo real",
       agents: ["Route Optimization AI", "Fleet Management AI", "Tracking AI"],
@@ -170,7 +170,7 @@ function IndustrySolutions() {
     },
     {
       industry: "Inmobiliario",
-      icon: "🏢",
+      icon: "",
       problem: "Gestión de propiedades manual, valoraciones inconsistentes y atención al cliente limitada",
       solution: "Plataforma de agentes para gestión de propiedades, valoración automática y atención 24/7",
       agents: ["Property Management AI", "Valuation AI", "Customer Service AI"],
@@ -298,10 +298,10 @@ function TransformationMetrics() {
   const { ref, isIntersecting } = useIntersectionObserver()
 
   const metrics = [
-    { value: "8", label: "Industrias Transformadas", icon: "🏭" },
-    { value: "500+", label: "Empresas Implementadas", icon: "🏢" },
-    { value: "75%", label: "Promedio Reducción Costos", icon: "💰" },
-    { value: "24/7", label: "Operación Continua", icon: "⏰" }
+    { value: "8", label: "Industrias Transformadas", icon: "" },
+    { value: "500+", label: "Empresas Implementadas", icon: "" },
+    { value: "75%", label: "Promedio Reducción Costos", icon: "" },
+    { value: "24/7", label: "Operación Continua", icon: "" }
   ]
 
   return (
@@ -345,20 +345,12 @@ function CTASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className={`text-center ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            ¿Lista tu industria para la transformación?
+            ¿Listo para ser la transformación de la industria?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Cada día que esperas es una ventaja competitiva que pierdes.
+            Cada día que esperas es una ventaja competitiva que perdés.
             Comienza tu transformación digital hoy mismo con nuestros agentes especializados.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-              Consulta Gratuita
-            </Button>
-            <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
-              Descargar Casos de Estudio
-            </Button>
-          </div>
         </div>
       </div>
     </section>
