@@ -99,6 +99,7 @@ function HeroSection() {
     <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0a0f2b] via-transparent to-transparent pointer-events-none" />
   </div>
 </div>
+</div>
     </section>
   )
 }
