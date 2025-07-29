@@ -305,7 +305,7 @@ function TransformationMetrics() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Impacto Medible en Cada Sector
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto">
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Nuestras soluciones entregan resultados consistentes y medibles
             en todas las industrias donde operamos.
           </p>
