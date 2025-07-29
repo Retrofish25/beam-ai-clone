@@ -152,7 +152,7 @@ ${formData.mensaje}
               </h2>
               <p className="text-xl text-gray-300 mb-8">
                 Completa el formulario y nuestro equipo se pondrá en contacto contigo
-                en menos de 24 horas para discutir cómo podemos ayudarte.
+                en menos de 24 horas para empezar a ayudarte.
               </p>
             </div>
 
@@ -325,12 +325,12 @@ function ContactInfoSection() {
             ¿Prefieres una Reunión Directa?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Agenda una llamada de 30 minutos con nuestro equipo para una consulta personalizada
+            Agenda una llamada con nuestro equipo para una consulta personalizada
             sobre cómo la IA puede transformar tu negocio específico.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-              Agendar Llamada de 30 Min
+              Agendar Llamada
             </Button>
             <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
               Ver Calendario Disponible
