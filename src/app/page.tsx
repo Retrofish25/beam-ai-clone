@@ -78,23 +78,32 @@ function HeroSection() {
          Solicitar Demo
           </Button>
         </div>
-        
+
         <div className="relative w-full h-screen overflow-hidden">
   <video
+    className="absolute top-0 left-0 w-full h-full object-cover"
     autoPlay
     muted
     loop
     playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover"
   >
-    <source src="https://res.cloudinary.com/duxhjhuma/video/upload/background01_kbkk8s.mp4" />
-    Tu navegador no soporta videos HTML5.
+    <source
+      src="https://res.cloudinary.com/duxhjhuma/video/upload/background01_kbkk8s.mp4"
+      type="video/mp4"
+    />
+    Tu navegador no soporta el video.
   </video>
 
-  {/* Opcional: contenido encima */}
+  {/* Degradado al fondo */}
+  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#0a0f2b] pointer-events-none" />
+
+  {/* Contenido arriba del video */}
   <div className="relative z-10 flex items-center justify-center h-full">
-    <h1 className="text-white text-5xl font-bold"></h1>
+    <h1 className="text-white text-6xl font-bold text-center">
+      
+    </h1>
   </div>
+</div>
         </div>
       </div>
     </section>
