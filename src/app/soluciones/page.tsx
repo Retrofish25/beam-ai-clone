@@ -283,12 +283,6 @@ function SolutionCard({ solution, index, isVisible }: { solution: SolutionData, 
             </div>
           </div>
         </div>
-
-        <div className="pt-4">
-          <Button className="gradient-primary text-white hover-glow">
-            Ver Caso Completo →
-          </Button>
-        </div>
       </div>
     </div>
   )
