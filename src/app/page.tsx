@@ -79,29 +79,34 @@ function HeroSection() {
           </Button>
         </div>
 
-        <div className="relative w-full h-screen overflow-hidden">
+<div className="relative w-screen h-screen overflow-hidden">
+  {/* VIDEO DE FONDO */}
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
     autoPlay
     muted
     loop
     playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
   >
     <source
-      src="https://res.cloudinary.com/duxhjhuma/video/upload/background01_kbkk8s.mp4"
+      src="https://res.cloudinary.com/duxhjhuma/video/upload/f_mp4/background01_kbkk8s.mp4"
       type="video/mp4"
     />
     Tu navegador no soporta el video.
   </video>
 
-  {/* Degradado al fondo */}
-  <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-[#0a0f2b] pointer-events-none" />
+  {/* DEGRADADO INFERIOR PARA SUAVIZAR */}
+  <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-b from-transparent to-[#0a0f2b] z-10" />
 
-  {/* Contenido arriba del video */}
-  <div className="relative z-10 flex items-center justify-center h-full">
-    <h1 className="text-white text-6xl font-bold text-center">
+  {/* CONTENIDO ENCIMA DEL VIDEO */}
+  <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+    <h1 className="text-white text-5xl md:text-6xl font-bold mb-4">
       
     </h1>
+    <p className="text-white text-lg max-w-2xl">
+    </p>
+    <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition">
+    </button>
   </div>
 </div>
       </div>
