@@ -87,13 +87,13 @@ function HeroSection() {
     playsInline
     className="absolute top-0 left-0 w-full h-full object-cover"
   >
-    <source src="https://player.cloudinary.com/embed/?cloud_name=duxhjhuma&public_id=background01_kbkk8s&profile=cld-default" type="video/mp4" />
+    <source src="https://player.cloudinary.com/embed/?cloud_name=duxhjhuma&public_id=background01_kbkk8s&profile=meduzia" />
     Tu navegador no soporta videos HTML5.
   </video>
 
   {/* Opcional: contenido encima */}
   <div className="relative z-10 flex items-center justify-center h-full">
-    <h1 className="text-white text-5xl font-bold">Medusia</h1>
+    <h1 className="text-white text-5xl font-bold"></h1>
   </div>
         </div>
       </div>
