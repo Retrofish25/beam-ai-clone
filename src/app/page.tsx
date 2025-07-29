@@ -80,14 +80,14 @@ function HeroSection() {
         </div>
 
         <div className={`mt-16 relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.3s' }}>
-          <div className="gradient-card glass-border rounded-2xl p-8 max-w-4xl mx-auto hover-lift">
-            <img
-              src="https://ext.same-assets.com/2264316469/3033932722.png"
-              alt="Beam AI Dashboard"
-              className="w-full h-auto rounded-lg"
-              loading="lazy"
-            />
-          </div>
+          <div className={`relative w-full h-screen overflow-hidden ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.3s' }}>
+  <img
+    src="https://ext.same-assets.com/2264316469/3033932722.png"
+    alt="Medusia Dashboard"
+    className="w-full h-full object-cover object-center"
+    loading="lazy"
+  />
+</div>
         </div>
       </div>
     </section>
