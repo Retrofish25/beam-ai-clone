@@ -78,17 +78,22 @@ function HeroSection() {
          Solicitar Demo
           </Button>
         </div>
-
-<div className="gradient-card glass-border rounded-2xl p-8 max-w-6xl mx-auto mt-16">
-  <div className="relative aspect-video w-full rounded-xl overflow-hidden">
-    <iframe
-      className="absolute top-0 left-0 w-full h-full"
-      src="https://player.cloudinary.com/embed/?cloud_name=duxhjhuma&public_id=background01_kbkk8s&player[autoplay]=true&player[muted]=true&player[loop]=true&player[controls]=false"
-      title="Video de Medusia"
-      frameBorder="0"
-      allow="autoplay; fullscreen; encrypted-media"
-      allowFullScreen
-    ></iframe>
+        
+<div className="gradient-card glass-border rounded-2xl px-6 py-10 max-w-7xl mx-auto mt-12">
+  <div className="relative w-full h-[600px] rounded-xl overflow-hidden">
+    <video
+      className="absolute top-0 left-0 w-full h-full object-cover"
+      autoPlay
+      muted
+      loop
+      playsInline
+    >
+      <source
+        src="https://res.cloudinary.com/duxhjhuma/video/upload/f_mp4/background01_kbkk8s.mp4"
+        type="video/mp4"
+      />
+      Tu navegador no soporta la reproducción de video.
+    </video>
   </div>
 </div>
     </section>
