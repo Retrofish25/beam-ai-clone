@@ -41,7 +41,9 @@ function Navigation() {
             <Link href="/contacto" className="text-blue-400 border-b-2 border-blue-400">Contacto</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
               <div className="w-6 h-0.5 bg-white"></div>
@@ -345,9 +347,11 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Ve nuestros agentes en acción con datos reales de tu industria
             </p>
-            <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
-              Solicitar Demo
-            </Button>
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+                Solicitar Demo
+              </Button>
+            </a>
           </Card>
 
           <Card className={`gradient-card glass-border bg-transparent border-white/10 hover-lift p-8 text-center ${isIntersecting ? 'animate-scale-in' : ''}`} style={{ animationDelay: '0.2s' }}>
