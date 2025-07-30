@@ -407,7 +407,7 @@ Implementá agentes de IA para escalar tus campañas, generar leads calificados 
           <div className="md:col-span-1">
             <Card className="gradient-primary p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
-                Integrar Agentes IA<br />en el organigrama de tu negocio.
+                Integrar Agentes IA<br />
               </h3>
             </Card>
           </div>
