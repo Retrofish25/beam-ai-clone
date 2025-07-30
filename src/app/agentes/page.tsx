@@ -484,7 +484,7 @@ function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm mt-8">
           <p>© Meduzia AI. Todos los derechos reservados 2025</p>
-          <p className="mt-4 md:mt-0">Hecho con ❤️ para automatizar el futuro</p>
+          <p className="mt-4 md:mt-0">La revolución de automatizar tu negocio</p>
         </div>
       </div>
     </footer>
