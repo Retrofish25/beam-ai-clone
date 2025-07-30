@@ -121,7 +121,7 @@ Mensaje:
 ${formData.mensaje}
       `.trim()
 
-      const mailtoLink = `mailto:contacto@meduzia.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      const mailtoLink = `mailto:info@retrofish.com.ar?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
       window.location.href = mailtoLink
 
       setSubmitStatus('success')
@@ -166,7 +166,7 @@ ${formData.mensaje}
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Email Directo</h3>
-                    <p className="text-blue-400">contacto@meduzia.ai</p>
+                    <p className="text-blue-400">info@retrofish.com.ar</p>
                   </div>
                 </div>
               </Card>
@@ -330,13 +330,12 @@ function ContactInfoSection() {
             Agenda una llamada con nuestro equipo para una consulta personalizada
             sobre cómo la IA puede transformar tu negocio específico.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-              Agendar Llamada
-            </Button>
-            <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
-              Ver Calendario Disponible
-            </Button>
+          <div className="flex justify-center">
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
+                Ver Calendario Disponible
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -360,9 +359,11 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Análisis completo de tus procesos y recomendaciones personalizadas
             </p>
-            <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
-              Agendar Consulta
-            </Button>
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+                Agendar Consulta
+              </Button>
+            </a>
           </Card>
 
           <Card className={`gradient-card glass-border bg-transparent border-white/10 hover-lift p-8 text-center ${isIntersecting ? 'animate-scale-in' : ''}`} style={{ animationDelay: '0.3s' }}>
@@ -371,9 +372,11 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Plan completo de implementación con soporte técnico especializado
             </p>
-            <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
-              Crear Plan
-            </Button>
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+                Crear Plan
+              </Button>
+            </a>
           </Card>
         </div>
       </div>
