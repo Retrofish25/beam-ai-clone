@@ -43,7 +43,9 @@ function Navigation() {
             <a href="/contacto" className="text-gray-300 hover:text-white transition-colors">Contacto</a>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
               <div className="w-6 h-0.5 bg-white"></div>
@@ -75,9 +77,11 @@ function HeroSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             La plataforma de agentes más avanzada para automatizar procesos de negocio. Meduzia revoluciona su marketing, publicidad, ventas y atención al cliente a través de Agentes IA que opreran de manera continua, reducen costos y mejoran la productividad.
           </p>
-          <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
-         Solicitar Demo
-          </Button>
+          <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
+              Solicitar Demo
+            </Button>
+          </a>
         </div>
         
 <div className="gradient-card glass-border rounded-2xl p-8 max-w-5xl mx-auto mt-16">
