@@ -212,7 +212,11 @@ function AIAgentsSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo erroes. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
           </p>
-          <Button className="gradient-primary text-white hover-glow">Ver todos los Agentes</Button>
+          <Link href="/agentes">
+  <Button className="gradient-primary text-white hover-glow">
+    Ver todos los Agentes
+  </Button>
+</Link>
         </div>
 
         <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
