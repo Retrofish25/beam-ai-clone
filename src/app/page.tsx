@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useRef, useState, useEffect } from 'react'
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 import { FloatingParticles } from '@/components/FloatingParticles'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -219,10 +220,6 @@ function AIAgentsSection() {
         </Button>
       </Link>
     </div>
-  </div>
-</section>
-        </div>
-
         <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
           {/* Navigation Arrows */}
           <button
