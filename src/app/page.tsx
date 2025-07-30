@@ -736,98 +736,21 @@ function Footer() {
   return (
     <footer className="py-16 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-5 gap-8 mb-12">
-          <div className="md:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="text-2xl font-bold text-white">beam</div>
-            </div>
-            <div className="flex space-x-4 mb-6">
-              <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
-              <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
-              <div className="w-8 h-8 bg-gray-600 rounded-full"></div>
-            </div>
-            <div className="mb-6">
-              <h4 className="text-white font-medium mb-4">Subscribe to our newsletter</h4>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="name@email.com"
-                  className="flex-1 bg-gray-800 border border-gray-700 rounded-l px-3 py-2 text-white text-sm"
-                />
-                <Button className="bg-white text-black rounded-l-none px-6">Subscribe</Button>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-4">Platform</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">AI Agent Platform</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AI Agent Tools</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AI Agents</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Agentic Workflows</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AgentOS</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Database, Memory & Rag</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Integrations</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-4">Solutions</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">BPO</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Financial Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">HR & Recruitment</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Customer Service</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Debt Collection</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Insurance</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Healthcare</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Property Management</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Custom AI Solutions</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-4">Resources</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Agentic Insights Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Webinars <Badge className="ml-1 text-xs bg-blue-500 text-white">NEW</Badge></a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Changelog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Partner Program</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Beam Academy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Use Cases</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Agentic Automation 101</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AI Native <Badge className="ml-1 text-xs bg-blue-500 text-white">NEW</Badge></a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-medium mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-400 text-sm mb-6">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Career</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Request Demo</a></li>
-            </ul>
-
-            <h4 className="text-white font-medium mb-4">Legal</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Data Protection</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Use</a></li>
-            </ul>
+        <div className="text-center">
+          <Link href="/" className="text-2xl font-bold text-white mb-4 inline-block">meduzia</Link>
+          <p className="text-gray-400 mb-8">
+            Transformando industrias con inteligencia artificial
+          </p>
+          <div className="flex justify-center space-x-6">
+            <Link href="/" className="text-gray-400 hover:text-white transition-colors">Inicio</Link>
+            <Link href="/agentes" className="text-gray-400 hover:text-white transition-colors">Agentes</Link>
+            <Link href="/soluciones" className="text-blue-400">Soluciones</Link>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm">
-          <p>© MEDUZIA AI. All rights reserved 2025</p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <span>ES</span>
-            </div>
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm mt-8">
+          <p>© Meduzia AI. Todos los derechos reservados 2025</p>
+          <p className="mt-4 md:mt-0">Revolucionando el futuro de los negocios</p>
         </div>
       </div>
     </footer>
