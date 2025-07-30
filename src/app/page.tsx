@@ -200,23 +200,27 @@ function AIAgentsSection() {
   ]
 
   return (
-    <section ref={ref} className="py-20 relative section-gradient">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className={`text-center mb-16 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
-          <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
-            Agentes IA
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Agentes IA<br />que superan el rendimiento humano
-          </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
-            Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo erroes. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
-          </p>
-          <Link href="https://meduzia.com.ar/agentes">
-  <Button className="gradient-primary text-white hover-glow">
-    Ver todos los Agentes
-  </Button>
-</Link>
+<section ref={ref} className="py-20 relative section-gradient">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className={`text-center mb-16 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
+      <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+        Agentes IA
+      </Badge>
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Agentes IA<br />que superan el rendimiento humano
+      </h2>
+      <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+        Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo errores. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
+      </p>
+
+      <Link href="/agentes">
+        <Button className="gradient-primary text-white hover-glow">
+          Ver todos los Agentes
+        </Button>
+      </Link>
+    </div>
+  </div>
+</section>
         </div>
 
         <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
