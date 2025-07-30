@@ -350,7 +350,9 @@ function WorkflowsSection() {
           <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
             Los agentes de Meduzia automatizan de punta a punta el recorrido del cliente: desde la generación del primer contacto con campañas virales y anuncios optimizados, hasta la atención automatizada en múltiples canales y la gestión operativa del negocio. Todo integrado, optimizando y escalando.
           </p>
-          <Button className="gradient-primary text-white">Ver más</Button>
+          <Link href="/soluciones">
+            <Button className="gradient-primary text-white">Ver más</Button>
+          </Link>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
