@@ -49,7 +49,9 @@ function Navigation() {
             <Link href="/contacto" className="text-gray-300 hover:text-white transition-colors">Contacto</Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+            </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
               <div className="w-6 h-0.5 bg-white"></div>
