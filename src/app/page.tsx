@@ -556,24 +556,32 @@ function MultiAgentSection() {
 function NewsSection() {
   const articles = [
     {
-      title: "From Co-Pilots to AI Agents: Exploring the 5 Levels of Autonomy",
-      author: "Bareerah Shoukat",
-      date: "Jul 23, 2025",
+      title:
+        "2025, el año de las Frontier Firms: 42% de líderes ya construyen sistemas multi-agente",
+      author: "Microsoft WorkLab",
+      date: "2025",
       image: "https://ext.same-assets.com/2264316469/329113509.png",
-      featured: true
+      url: "https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born",
+      featured: true,
     },
     {
-      title: "The AI Wars: Talent, Infrastructure, and the Future of the Web",
-      image: "https://ext.same-assets.com/2264316469/3234034791.png"
+      title:
+        "El futuro del trabajo: colaboración entre humanos y agentes de IA",
+      image: "https://ext.same-assets.com/2264316469/3234034791.png",
+      url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work",
     },
     {
-      title: "From RPA to APA: Why Bots Alone Can't Keep Up in 2025",
-      image: "https://ext.same-assets.com/2264316469/2123165345.png"
+      title:
+        "Top agentes de IA 2025: Gemini, Copilot, Watsonx y más automatizan procesos",
+      image: "https://ext.same-assets.com/2264316469/2123165345.png",
+      url: "https://dig.watch/updates/top-7-ai-agents-transforming-business-in-2025",
     },
     {
-      title: "From 10 Clients to 1,000: How Entrepreneurs Are Scaling Operations with Agentic AI",
-      image: "https://ext.same-assets.com/2264316469/4075020448.png"
-    }
+      title:
+        "Gartner: IA agentica resolverá 80% de problemas de clientes reduciendo costos 30%",
+      image: "https://ext.same-assets.com/2264316469/4075020448.png",
+      url: "https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far",
+    },
   ]
 
   return (
@@ -589,11 +597,12 @@ function NewsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
-            <CardContent className="p-0">
-              <div className="aspect-video relative overflow-hidden rounded-t-lg">
-                <img
-                  src={articles[0].image}
+          <Link href={articles[0].url} target="_blank" rel="noopener noreferrer">
+            <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
+              <CardContent className="p-0">
+                <div className="aspect-video relative overflow-hidden rounded-t-lg">
+                  <img
+                    src={articles[0].image}
                   alt={articles[0].title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
@@ -611,11 +620,18 @@ function NewsSection() {
               </div>
             </CardContent>
           </Card>
+          </Link>
 
           <div className="space-y-6">
             {articles.slice(1).map((article, index) => (
-              <Card key={index} className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
-                <CardContent className="p-6 flex space-x-4">
+              <Link
+                key={index}
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
+                  <CardContent className="p-6 flex space-x-4">
                   <div className="w-20 h-20 flex-shrink-0">
                     <img
                       src={article.image}
@@ -631,6 +647,7 @@ function NewsSection() {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </div>
