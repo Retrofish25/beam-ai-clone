@@ -477,18 +477,18 @@ function Footer() {
         <div className="text-center">
           <Link href="/" className="text-2xl font-bold text-white mb-4 inline-block">meduzia</Link>
           <p className="text-gray-400 mb-8">
-            Transformando negocios con inteligencia artificial
+            Transformando industrias con inteligencia artificial
           </p>
           <div className="flex justify-center space-x-6">
             <Link href="/" className="text-gray-400 hover:text-white transition-colors">Inicio</Link>
-            <Link href="/agentes" className="text-blue-400">Agentes</Link>
-            <Link href="/" className="text-gray-400 hover:text-white transition-colors">Contacto</Link>
+            <Link href="/agentes" className="text-gray-400 hover:text-white transition-colors">Agentes</Link>
+            <Link href="/soluciones" className="text-blue-400">Soluciones</Link>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm mt-8">
           <p>© Meduzia AI. Todos los derechos reservados 2025</p>
-          <p className="mt-4 md:mt-0">Hecho con ❤️ para automatizar el futuro</p>
+          <p className="mt-4 md:mt-0">Revolucionando el futuro de los negocios</p>
         </div>
       </div>
     </footer>

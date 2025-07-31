@@ -1,6 +1,22 @@
 "use client";
 
 import * as React from "react";
+"use client";
+
+import * as React from "react";
+import { cn } from "@/lib/utils";
+
+const Card = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  return (
+    <div ref={ref} className={cn("tu-clase-base", className)} {...props} />
+  );
+});
+Card.displayName = "Card";
+
+export { Card };
 
 import { cn } from "@/lib/utils";
 
@@ -11,14 +27,33 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border bg-card/50 text-card-foreground backdrop-blur-sm shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 group relative overflow-hidden",
-      "before:absolute before:inset-0 before:bg-gradient-to-br before:from-blue-500/5 before:to-purple-500/5 before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
-      className,
+const Card = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+className={cn(
+  // tus clases Tailwind
+  "rounded-xl border bg-card/50 text-card-foreground backdrop-blur-sm shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-1 group relative overflow-hidden z-0",
+  "before:absolute before:inset-0 before:bg-gradient-to-br before:from-blue-500/5 before:to-purple-500/5 before:opacity-0 before:transition-opacity before:duration-300 before:pointer-events-none before:-z-10 hover:before:opacity-100",
+  // preserva clases pasadas por props
+  className,
+)}
+
     )}
     {...props}
   />
 ));
 Card.displayName = "Card";
+
+export { Card };
+
+const CardHeader = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(/* … */);
+
 
 const CardHeader = React.forwardRef<
   HTMLDivElement,
