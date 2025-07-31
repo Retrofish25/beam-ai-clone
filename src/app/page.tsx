@@ -406,7 +406,7 @@ Implementá agentes de IA para escalar tus campañas, generar leads calificados 
         <div className="grid md:grid-cols-4 gap-8 items-center">
           <div className="md:col-span-1">
             <Card className="gradient-primary p-8 text-center">
-              <h3 className="text-1xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 Integrar Agentes IA<br />
               </h3>
             </Card>
