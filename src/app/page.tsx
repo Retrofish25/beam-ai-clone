@@ -1,5 +1,6 @@
 "use client";
 
+v23c6m-codex/fix-redirect-for-view-all-agents-button
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +14,16 @@ import { useRef, useState, useEffect } from "react";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { useRef, useState, useEffect } from 'react'
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
+import { FloatingParticles } from '@/components/FloatingParticles'
+import Link from 'next/link'
+main
 
 export default function Home() {
   return (
@@ -63,6 +74,7 @@ function Navigation() {
             </a>
           </div>
           <div className="flex items-center space-x-4">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://wa.me/5491172389359"
               target="_blank"
@@ -71,6 +83,10 @@ function Navigation() {
               <Button variant="ghost" className="text-white">
                 Solicitar Demo
               </Button>
+
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+main
             </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
@@ -112,6 +128,7 @@ function HeroSection() {
             atención al cliente a través de Agentes IA que opreran de manera
             continua, reducen costos y mejoran la productividad.
           </p>
+v23c6m-codex/fix-redirect-for-view-all-agents-button
           <a
             href="https://wa.me/5491172389359"
             target="_blank"
@@ -121,6 +138,10 @@ function HeroSection() {
               size="lg"
               className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow"
             >
+
+          <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="gradient-primary text-white font-semibold px-8 py-3 text-lg animate-glow hover-glow">
+main
               Solicitar Demo
             </Button>
           </a>
@@ -287,6 +308,7 @@ function AIAgentsSection() {
   ];
 
   return (
+v23c6m-codex/fix-redirect-for-view-all-agents-button
     <section ref={ref} className="py-20 relative section-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
@@ -317,6 +339,28 @@ function AIAgentsSection() {
           className={`relative ${isIntersecting ? "animate-slide-in-up" : ""}`}
           style={{ animationDelay: "0.2s" }}
         >
+
+<section ref={ref} className="py-20 relative section-gradient">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className={`text-center mb-16 ${isIntersecting ? 'animate-fade-in-up' : ''}`}>
+      <Badge className="mb-4 bg-blue-500/10 text-blue-400 border-blue-500/20">
+        Agentes IA
+      </Badge>
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Agentes IA<br />que superan el rendimiento humano
+      </h2>
+      <p className="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
+        Nuestros agentes automatizan tareas con eficiencia. Operan de forma continua aumentando la productividad y reduciendo errores. Permitiendo que los negocios escalen rápidamente sin costos adicionales en recursos humanos.
+      </p>
+
+      <Link href="/agentes">
+        <Button className="gradient-primary text-white hover-glow">
+          Ver todos los Agentes
+        </Button>
+      </Link>
+    </div>
+        <div className={`relative ${isIntersecting ? 'animate-slide-in-up' : ''}`} style={{ animationDelay: '0.2s' }}>
+main
           {/* Navigation Arrows */}
           <button
             onClick={scrollLeft}
@@ -532,9 +576,13 @@ function BenefitsSection() {
           <div className="md:col-span-1">
             <Card className="gradient-primary p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
                 Integrar Agentes IA
                 <br />
                 en el organigrama de tu negocio.
+
+                Integrar Agentes IA<br />
+main
               </h3>
             </Card>
           </div>
@@ -730,7 +778,11 @@ function NewsSection() {
       image: "https://ext.same-assets.com/2264316469/4075020448.png",
       url: "https://www.crn.com/news/ai/2025/10-hottest-agentic-ai-tools-and-agents-of-2025-so-far",
     },
+v23c6m-codex/fix-redirect-for-view-all-agents-button
   ];
+
+  ]
+main
 
   return (
     <section className="py-20 border-t border-white/10">
@@ -745,16 +797,21 @@ function NewsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
           <Link
             href={articles[0].url}
             target="_blank"
             rel="noopener noreferrer"
           >
+
+          <Link href={articles[0].url} target="_blank" rel="noopener noreferrer">
+main
             <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
               <CardContent className="p-0">
                 <div className="aspect-video relative overflow-hidden rounded-t-lg">
                   <img
                     src={articles[0].image}
+v23c6m-codex/fix-redirect-for-view-all-agents-button
                     alt={articles[0].title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                   />
@@ -774,6 +831,25 @@ function NewsSection() {
                 </div>
               </CardContent>
             </Card>
+=======
+                  alt={articles[0].title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                />
+              </div>
+              <div className="p-6">
+                <Badge className="mb-3 text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                  ARTICLE
+                </Badge>
+                <h3 className="text-xl font-semibold text-white mb-4 leading-tight">{articles[0].title}</h3>
+                <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                  <span>by {articles[0].author}</span>
+                  <span>•</span>
+                  <span>{articles[0].date}</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+main
           </Link>
 
           <div className="space-y-6">
@@ -786,6 +862,7 @@ function NewsSection() {
               >
                 <Card className="gradient-card glass-border bg-transparent border-white/10 hover:border-blue-500/30 transition-all group cursor-pointer">
                   <CardContent className="p-6 flex space-x-4">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
                     <div className="w-20 h-20 flex-shrink-0">
                       <img
                         src={article.image}
@@ -803,6 +880,23 @@ function NewsSection() {
                     </div>
                   </CardContent>
                 </Card>
+
+                  <div className="w-20 h-20 flex-shrink-0">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <Badge className="mb-2 text-xs bg-blue-500/10 text-blue-400 border-blue-500/20">
+                      ARTICLE
+                    </Badge>
+                    <h4 className="text-white font-medium leading-tight">{article.title}</h4>
+                  </div>
+                </CardContent>
+              </Card>
+main
               </Link>
             ))}
           </div>
@@ -916,6 +1010,7 @@ function Footer() {
   return (
     <footer className="py-16 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
         <div className="grid md:grid-cols-5 gap-8 mb-12">
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
@@ -1135,17 +1230,22 @@ function Footer() {
                 </a>
               </li>
             </ul>
+        <div className="text-center">
+          <Link href="/" className="text-2xl font-bold text-white mb-4 inline-block">meduzia</Link>
+          <p className="text-gray-400 mb-8">
+            Transformando industrias con inteligencia artificial
+          </p>
+          <div className="flex justify-center space-x-6">
+            <Link href="/" className="text-gray-400 hover:text-white transition-colors">Inicio</Link>
+            <Link href="/agentes" className="text-gray-400 hover:text-white transition-colors">Agentes</Link>
+            <Link href="/soluciones" className="text-blue-400">Soluciones</Link>
+main
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm">
-          <p>© MEDUZIA AI. All rights reserved 2025</p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <div className="flex items-center space-x-2">
-              <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <span>ES</span>
-            </div>
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm mt-8">
+          <p>© Meduzia AI. Todos los derechos reservados 2025</p>
+          <p className="mt-4 md:mt-0">Revolucionando el futuro de los negocios</p>
         </div>
       </div>
     </footer>

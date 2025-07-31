@@ -64,6 +64,7 @@ function Navigation() {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://wa.me/5491172389359"
               target="_blank"
@@ -72,6 +73,9 @@ function Navigation() {
               <Button variant="ghost" className="text-white">
                 Solicitar Demo
               </Button>
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+main
             </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
@@ -158,8 +162,12 @@ Mensaje:
 ${formData.mensaje}
       `.trim();
 
+v23c6m-codex/fix-redirect-for-view-all-agents-button
       const mailtoLink = `mailto:info@retrofish.com.ar?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoLink;
+      const mailtoLink = `mailto:info@retrofish.com.ar?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      window.location.href = mailtoLink
+ main
 
       setSubmitStatus("success");
       setFormData({
@@ -446,6 +454,7 @@ function ContactInfoSection() {
             específico.
           </p>
           <div className="flex justify-center">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://calendly.com/retrofishco/30min"
               target="_blank"
@@ -456,6 +465,10 @@ function ContactInfoSection() {
                 variant="outline"
                 className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg"
               >
+
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
+/main
                 Ver Calendario Disponible
               </Button>
             </a>
@@ -472,6 +485,7 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Ve nuestros agentes en acción con datos reales de tu industria
             </p>
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://wa.me/5491172389359"
               target="_blank"
@@ -481,6 +495,10 @@ function ContactInfoSection() {
                 variant="outline"
                 className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
               >
+
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+ main
                 Solicitar Demo
               </Button>
             </a>
@@ -497,6 +515,7 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Análisis completo de tus procesos y recomendaciones personalizadas
             </p>
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://calendly.com/retrofishco/30min"
               target="_blank"
@@ -506,6 +525,10 @@ function ContactInfoSection() {
                 variant="outline"
                 className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
               >
+
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+main
                 Agendar Consulta
               </Button>
             </a>
@@ -522,6 +545,7 @@ function ContactInfoSection() {
             <p className="text-gray-300 mb-4">
               Plan completo de implementación con soporte técnico especializado
             </p>
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://calendly.com/retrofishco/30min"
               target="_blank"
@@ -531,6 +555,10 @@ function ContactInfoSection() {
                 variant="outline"
                 className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
               >
+
+            <a href="https://calendly.com/retrofishco/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10">
+main
                 Crear Plan
               </Button>
             </a>

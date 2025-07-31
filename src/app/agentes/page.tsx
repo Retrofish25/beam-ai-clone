@@ -53,6 +53,7 @@ function Navigation() {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <a
               href="https://wa.me/5491172389359"
               target="_blank"
@@ -61,6 +62,10 @@ function Navigation() {
               <Button variant="ghost" className="text-white">
                 Solicitar Demo
               </Button>
+
+            <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" className="text-white">Solicitar Demo</Button>
+main
             </a>
             <div className="w-6 h-6 flex flex-col justify-center space-y-1 md:hidden">
               <div className="w-6 h-0.5 bg-white"></div>
@@ -107,6 +112,7 @@ function HeroSection() {
               ← Volver al Inicio
             </Button>
           </Link>
+v23c6m-codex/fix-redirect-for-view-all-agents-button
           <a
             href="https://wa.me/5491172389359"
             target="_blank"
@@ -117,6 +123,8 @@ function HeroSection() {
               variant="outline"
               className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg"
             >
+          <a href="https://wa.me/5491172389359" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 px-8 py-3 text-lg">
               Solicitar Demo
             </Button>
           </a>
@@ -602,9 +610,10 @@ function Footer() {
             meduzia
           </Link>
           <p className="text-gray-400 mb-8">
-            Transformando negocios con inteligencia artificial
+            Transformando industrias con inteligencia artificial
           </p>
           <div className="flex justify-center space-x-6">
+v23c6m-codex/fix-redirect-for-view-all-agents-button
             <Link
               href="/"
               className="text-gray-400 hover:text-white transition-colors"
@@ -620,12 +629,17 @@ function Footer() {
             >
               Contacto
             </Link>
+
+            <Link href="/" className="text-gray-400 hover:text-white transition-colors">Inicio</Link>
+            <Link href="/agentes" className="text-gray-400 hover:text-white transition-colors">Agentes</Link>
+            <Link href="/soluciones" className="text-blue-400">Soluciones</Link>
+main
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-gray-400 text-sm mt-8">
           <p>© Meduzia AI. Todos los derechos reservados 2025</p>
-          <p className="mt-4 md:mt-0">Hecho con ❤️ para automatizar el futuro</p>
+          <p className="mt-4 md:mt-0">Revolucionando el futuro de los negocios</p>
         </div>
       </div>
     </footer>
